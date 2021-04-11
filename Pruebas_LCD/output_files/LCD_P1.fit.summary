@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Apr 10 21:29:11 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LCD_P1
+Top-level Entity Name : LIB_LCD_4BITS_REVC
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 450 / 6,272 ( 7 % )
+    Total combinational functions : 450 / 6,272 ( 7 % )
+    Dedicated logic registers : 75 / 6,272 ( 1 % )
+Total registers : 75
+Total pins : 21 / 92 ( 23 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

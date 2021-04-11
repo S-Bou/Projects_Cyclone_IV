@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RS",
+					"strict" : false
+				},
+				{
+					"name" : "ENA",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "GND[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GND[1]",
+					"strict" : false
+				},
+				{
+					"name" : "GND[2]",
+					"strict" : false
+				},
+				{
+					"name" : "GND[3]",
+					"strict" : false
+				},
+				{
+					"name" : "GND[4]",
+					"strict" : false
+				},
+				{
+					"name" : "GND[5]",
+					"strict" : false
+				},
+				{
+					"name" : "VDD",
+					"strict" : false
+				},
+				{
+					"name" : "CONTRAS",
+					"strict" : false
+				},
+				{
+					"name" : "ANODE",
+					"strict" : false
+				},
+				{
+					"name" : "GROUND",
+					"strict" : false
+				},
+				{
+					"name" : "CINCOV",
+					"strict" : false
+				},
+				{
+					"name" : "POT",
+					"strict" : false
+				},
+				{
+					"name" : "R_LED",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
