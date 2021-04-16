@@ -1,0 +1,667 @@
+Analysis & Synthesis report for LCD_16X2
+Tue Apr 13 01:08:57 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |lcd16x2_ctrl_demo|EntradasTeclado:KBS|state_reg
+  9. State Machine - |lcd16x2_ctrl_demo|EntradasTeclado:KB2|state_reg
+ 10. State Machine - |lcd16x2_ctrl_demo|EntradasTeclado:KB1|state_reg
+ 11. State Machine - |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|op_state
+ 12. State Machine - |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|state
+ 13. Registers Removed During Synthesis
+ 14. General Register Statistics
+ 15. Inverted Register Statistics
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Source assignments for Top-level Entity: |lcd16x2_ctrl_demo
+ 18. Parameter Settings for User Entity Instance: lcd16x2_ctrl:DUT
+ 19. Parameter Settings for User Entity Instance: clk_div:CLK10
+ 20. Port Connectivity Checks: "clk_div:CLK10"
+ 21. Port Connectivity Checks: "lcd16x2_ctrl:DUT"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Apr 13 01:08:57 2021       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; LCD_16X2                                    ;
+; Top-level Entity Name              ; lcd16x2_ctrl_demo                           ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 415                                         ;
+;     Total combinational functions  ; 376                                         ;
+;     Dedicated logic registers      ; 124                                         ;
+; Total registers                    ; 124                                         ;
+; Total pins                         ; 28                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE6E22C8        ;                    ;
+; Top-level entity name                                            ; lcd16x2_ctrl_demo  ; LCD_16X2           ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+; clk_div.vhd                      ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/clk_div.vhd           ;         ;
+; KeyToASCII.vhd                   ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/KeyToASCII.vhd        ;         ;
+; EntradasTeclado.vhd              ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/EntradasTeclado.vhd   ;         ;
+; lcd16x2_ctrl.vhd                 ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl.vhd      ;         ;
+; lcd16x2_ctrl_demo.vhd            ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 415         ;
+;                                             ;             ;
+; Total combinational functions               ; 376         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 270         ;
+;     -- 3 input functions                    ; 54          ;
+;     -- <=2 input functions                  ; 52          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 356         ;
+;     -- arithmetic mode                      ; 20          ;
+;                                             ;             ;
+; Total registers                             ; 124         ;
+;     -- Dedicated logic registers            ; 124         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 28          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clk_i~input ;
+; Maximum fan-out                             ; 124         ;
+; Total fan-out                               ; 1780        ;
+; Average fan-out                             ; 3.20        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name       ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------------+--------------+
+; |lcd16x2_ctrl_demo         ; 376 (9)             ; 124 (23)                  ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |lcd16x2_ctrl_demo                                     ; lcd16x2_ctrl_demo ; work         ;
+;    |EntradasTeclado:KB1|   ; 54 (17)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd16x2_ctrl_demo|EntradasTeclado:KB1                 ; EntradasTeclado   ; work         ;
+;       |KeyToASCII:OUT1|    ; 37 (37)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd16x2_ctrl_demo|EntradasTeclado:KB1|KeyToASCII:OUT1 ; KeyToASCII        ; work         ;
+;    |EntradasTeclado:KB2|   ; 57 (18)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd16x2_ctrl_demo|EntradasTeclado:KB2                 ; EntradasTeclado   ; work         ;
+;       |KeyToASCII:OUT1|    ; 39 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd16x2_ctrl_demo|EntradasTeclado:KB2|KeyToASCII:OUT1 ; KeyToASCII        ; work         ;
+;    |EntradasTeclado:KBS|   ; 59 (23)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd16x2_ctrl_demo|EntradasTeclado:KBS                 ; EntradasTeclado   ; work         ;
+;       |KeyToASCII:OUT1|    ; 36 (36)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd16x2_ctrl_demo|EntradasTeclado:KBS|KeyToASCII:OUT1 ; KeyToASCII        ; work         ;
+;    |lcd16x2_ctrl:DUT|      ; 197 (197)           ; 41 (41)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT                    ; lcd16x2_ctrl      ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |lcd16x2_ctrl_demo|EntradasTeclado:KBS|state_reg ;
++----------------+----------------+---------------+----------------+
+; Name           ; state_reg.load ; state_reg.dps ; state_reg.idle ;
++----------------+----------------+---------------+----------------+
+; state_reg.idle ; 0              ; 0             ; 0              ;
+; state_reg.dps  ; 0              ; 1             ; 1              ;
+; state_reg.load ; 1              ; 0             ; 1              ;
++----------------+----------------+---------------+----------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |lcd16x2_ctrl_demo|EntradasTeclado:KB2|state_reg ;
++----------------+----------------+---------------+----------------+
+; Name           ; state_reg.load ; state_reg.dps ; state_reg.idle ;
++----------------+----------------+---------------+----------------+
+; state_reg.idle ; 0              ; 0             ; 0              ;
+; state_reg.dps  ; 0              ; 1             ; 1              ;
+; state_reg.load ; 1              ; 0             ; 1              ;
++----------------+----------------+---------------+----------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |lcd16x2_ctrl_demo|EntradasTeclado:KB1|state_reg ;
++----------------+----------------+---------------+----------------+
+; Name           ; state_reg.load ; state_reg.dps ; state_reg.idle ;
++----------------+----------------+---------------+----------------+
+; state_reg.idle ; 0              ; 0             ; 0              ;
+; state_reg.dps  ; 0              ; 1             ; 1              ;
+; state_reg.load ; 1              ; 0             ; 1              ;
++----------------+----------------+---------------+----------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|op_state                                                                                                                                                                                ;
++-----------------------+---------------+-----------------------+----------------------+-------------------+-----------------------+-----------------------+----------------------+-------------------+-----------------------+---------------+
+; Name                  ; op_state.DONE ; op_state.WAIT_DELAY_L ; op_state.WAIT_HOLD_L ; op_state.ENABLE_L ; op_state.WAIT_SETUP_L ; op_state.WAIT_DELAY_H ; op_state.WAIT_HOLD_H ; op_state.ENABLE_H ; op_state.WAIT_SETUP_H ; op_state.IDLE ;
++-----------------------+---------------+-----------------------+----------------------+-------------------+-----------------------+-----------------------+----------------------+-------------------+-----------------------+---------------+
+; op_state.IDLE         ; 0             ; 0                     ; 0                    ; 0                 ; 0                     ; 0                     ; 0                    ; 0                 ; 0                     ; 0             ;
+; op_state.WAIT_SETUP_H ; 0             ; 0                     ; 0                    ; 0                 ; 0                     ; 0                     ; 0                    ; 0                 ; 1                     ; 1             ;
+; op_state.ENABLE_H     ; 0             ; 0                     ; 0                    ; 0                 ; 0                     ; 0                     ; 0                    ; 1                 ; 0                     ; 1             ;
+; op_state.WAIT_HOLD_H  ; 0             ; 0                     ; 0                    ; 0                 ; 0                     ; 0                     ; 1                    ; 0                 ; 0                     ; 1             ;
+; op_state.WAIT_DELAY_H ; 0             ; 0                     ; 0                    ; 0                 ; 0                     ; 1                     ; 0                    ; 0                 ; 0                     ; 1             ;
+; op_state.WAIT_SETUP_L ; 0             ; 0                     ; 0                    ; 0                 ; 1                     ; 0                     ; 0                    ; 0                 ; 0                     ; 1             ;
+; op_state.ENABLE_L     ; 0             ; 0                     ; 0                    ; 1                 ; 0                     ; 0                     ; 0                    ; 0                 ; 0                     ; 1             ;
+; op_state.WAIT_HOLD_L  ; 0             ; 0                     ; 1                    ; 0                 ; 0                     ; 0                     ; 0                    ; 0                 ; 0                     ; 1             ;
+; op_state.WAIT_DELAY_L ; 0             ; 1                     ; 0                    ; 0                 ; 0                     ; 0                     ; 0                    ; 0                 ; 0                     ; 1             ;
+; op_state.DONE         ; 1             ; 0                     ; 0                    ; 0                 ; 0                     ; 0                     ; 0                    ; 0                 ; 0                     ; 1             ;
++-----------------------+---------------+-----------------------+----------------------+-------------------+-----------------------+-----------------------+----------------------+-------------------+-----------------------+---------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|state                                                                         ;
++--------------------+-------------------+--------------------+-------------------+--------------------+--------------+-------------+
+; Name               ; state.WRITE_LINE2 ; state.SELECT_LINE2 ; state.WRITE_LINE1 ; state.SELECT_LINE1 ; state.CONFIG ; state.RESET ;
++--------------------+-------------------+--------------------+-------------------+--------------------+--------------+-------------+
+; state.RESET        ; 0                 ; 0                  ; 0                 ; 0                  ; 0            ; 0           ;
+; state.CONFIG       ; 0                 ; 0                  ; 0                 ; 0                  ; 1            ; 1           ;
+; state.SELECT_LINE1 ; 0                 ; 0                  ; 0                 ; 1                  ; 0            ; 1           ;
+; state.WRITE_LINE1  ; 0                 ; 0                  ; 1                 ; 0                  ; 0            ; 1           ;
+; state.SELECT_LINE2 ; 0                 ; 1                  ; 0                 ; 0                  ; 0            ; 1           ;
+; state.WRITE_LINE2  ; 1                 ; 0                  ; 0                 ; 0                  ; 0            ; 1           ;
++--------------------+-------------------+--------------------+-------------------+--------------------+--------------+-------------+
+
+
++----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                     ;
++----------------------------------------+-----------------------------------------------+
+; Register name                          ; Reason for Removal                            ;
++----------------------------------------+-----------------------------------------------+
+; Dato_2[7]                              ; Stuck at GND due to stuck port data_in        ;
+; Dato_1[7]                              ; Stuck at GND due to stuck port data_in        ;
+; Opcion[7]                              ; Stuck at GND due to stuck port data_in        ;
+; EntradasTeclado:KB2|f_ps2c_reg         ; Merged with EntradasTeclado:KB1|f_ps2c_reg    ;
+; EntradasTeclado:KBS|f_ps2c_reg         ; Merged with EntradasTeclado:KB1|f_ps2c_reg    ;
+; EntradasTeclado:KB2|filter_reg[7]      ; Merged with EntradasTeclado:KB1|filter_reg[7] ;
+; EntradasTeclado:KBS|filter_reg[7]      ; Merged with EntradasTeclado:KB1|filter_reg[7] ;
+; EntradasTeclado:KB2|filter_reg[6]      ; Merged with EntradasTeclado:KB1|filter_reg[6] ;
+; EntradasTeclado:KBS|filter_reg[6]      ; Merged with EntradasTeclado:KB1|filter_reg[6] ;
+; EntradasTeclado:KB2|filter_reg[5]      ; Merged with EntradasTeclado:KB1|filter_reg[5] ;
+; EntradasTeclado:KBS|filter_reg[5]      ; Merged with EntradasTeclado:KB1|filter_reg[5] ;
+; EntradasTeclado:KB2|filter_reg[4]      ; Merged with EntradasTeclado:KB1|filter_reg[4] ;
+; EntradasTeclado:KBS|filter_reg[4]      ; Merged with EntradasTeclado:KB1|filter_reg[4] ;
+; EntradasTeclado:KB2|filter_reg[3]      ; Merged with EntradasTeclado:KB1|filter_reg[3] ;
+; EntradasTeclado:KBS|filter_reg[3]      ; Merged with EntradasTeclado:KB1|filter_reg[3] ;
+; EntradasTeclado:KB2|filter_reg[2]      ; Merged with EntradasTeclado:KB1|filter_reg[2] ;
+; EntradasTeclado:KBS|filter_reg[2]      ; Merged with EntradasTeclado:KB1|filter_reg[2] ;
+; EntradasTeclado:KB2|filter_reg[1]      ; Merged with EntradasTeclado:KB1|filter_reg[1] ;
+; EntradasTeclado:KBS|filter_reg[1]      ; Merged with EntradasTeclado:KB1|filter_reg[1] ;
+; EntradasTeclado:KB2|filter_reg[0]      ; Merged with EntradasTeclado:KB1|filter_reg[0] ;
+; EntradasTeclado:KBS|filter_reg[0]      ; Merged with EntradasTeclado:KB1|filter_reg[0] ;
+; Total Number of Removed Registers = 21 ;                                               ;
++----------------------------------------+-----------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 124   ;
+; Number of registers using Synchronous Clear  ; 1     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 69    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 81    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; count[0]                               ; 21      ;
+; Opcion[0]                              ; 1       ;
+; Dato_2[4]                              ; 1       ;
+; Dato_1[4]                              ; 1       ;
+; Opcion[1]                              ; 1       ;
+; Opcion[5]                              ; 1       ;
+; Dato_2[5]                              ; 1       ;
+; Dato_1[5]                              ; 1       ;
+; Total number of inverted registers = 8 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 5:1                ; 10 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |lcd16x2_ctrl_demo|EntradasTeclado:KBS|b_reg[7]  ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |lcd16x2_ctrl_demo|EntradasTeclado:KB2|b_reg[8]  ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |lcd16x2_ctrl_demo|EntradasTeclado:KB1|b_reg[10] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |lcd16x2_ctrl_demo|EntradasTeclado:KBS|n_reg[3]  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |lcd16x2_ctrl_demo|EntradasTeclado:KB2|n_reg[1]  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |lcd16x2_ctrl_demo|EntradasTeclado:KB1|n_reg[3]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|ptr[3]       ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|cnt[6]       ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|cnt[15]      ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|cnt[7]       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |lcd16x2_ctrl_demo|lcd16x2_ctrl:DUT|op_state     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Source assignments for Top-level Entity: |lcd16x2_ctrl_demo ;
++------------+---------+------+-------------------------------+
+; Assignment ; Value   ; From ; To                            ;
++------------+---------+------+-------------------------------+
+; LOCATION   ; Pin_68  ; -    ; lcd_db[7]                     ;
+; LOCATION   ; Pin_66  ; -    ; lcd_db[6]                     ;
+; LOCATION   ; Pin_64  ; -    ; lcd_db[5]                     ;
+; LOCATION   ; Pin_59  ; -    ; lcd_db[4]                     ;
+; LOCATION   ; Pin_23  ; -    ; clk_i                         ;
+; LOCATION   ; Pin_44  ; -    ; lcd_e                         ;
+; LOCATION   ; Pin_38  ; -    ; lcd_rs                        ;
+; LOCATION   ; Pin_42  ; -    ; lcd_rw                        ;
+; LOCATION   ; Pin_25  ; -    ; reset                         ;
+; LOCATION   ; Pin_120 ; -    ; ps2d                          ;
+; LOCATION   ; Pin_119 ; -    ; ps2c                          ;
+; LOCATION   ; Pin_90  ; -    ; rx_en_1                       ;
+; LOCATION   ; Pin_91  ; -    ; rx_en_2                       ;
+; LOCATION   ; Pin_89  ; -    ; rx_en_o                       ;
+; LOCATION   ; Pin_110 ; -    ; beep                          ;
+; LOCATION   ; Pin_88  ; -    ; key_1                         ;
++------------+---------+------+-------------------------------+
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lcd16x2_ctrl:DUT ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; clk_period_ns  ; 10    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_div:CLK10 ;
++----------------+---------+---------------------------------+
+; Parameter Name ; Value   ; Type                            ;
++----------------+---------+---------------------------------+
+; divider        ; 5000000 ; Signed Integer                  ;
++----------------+---------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clk_div:CLK10"                                                                         ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "lcd16x2_ctrl:DUT"             ;
++------------------------+-------+----------+--------------+
+; Port                   ; Type  ; Severity ; Details      ;
++------------------------+-------+----------+--------------+
+; rst                    ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[118..117] ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[110..109] ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[85..84]   ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[77..75]   ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[10..9]    ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[5..4]     ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[116..115] ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[105..103] ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[83..82]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[79..78]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[72..70]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[63..62]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[60..54]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[47..46]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[44..39]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[34..30]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[28..22]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[20..15]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[13..11]   ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[8..6]     ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[3..2]     ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[127]      ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[126]      ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[125]      ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[123]      ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[119]      ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[113]      ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[112]      ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[111]      ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[106]      ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[101]      ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[100]      ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[95]       ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[92]       ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[87]       ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[74]       ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[73]       ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[69]       ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[68]       ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[66]       ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[61]       ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[53]       ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[52]       ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[49]       ; Input ; Info     ; Stuck at GND ;
+; line1_buffer[45]       ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[37]       ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[29]       ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[21]       ; Input ; Info     ; Stuck at VCC ;
+; line1_buffer[14]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[61..58]   ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[45..44]   ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[119..118] ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[116..110] ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[108..104] ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[95..94]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[92..88]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[79..78]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[76..70]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[68..62]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[55..54]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[52..46]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[43..38]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[36..30]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[28..22]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[20..14]   ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[12..8]    ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[117]      ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[109]      ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[93]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[77]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[69]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[57]       ; Input ; Info     ; Stuck at GND ;
+; line2_buffer[56]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[53]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[37]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[29]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[21]       ; Input ; Info     ; Stuck at VCC ;
+; line2_buffer[13]       ; Input ; Info     ; Stuck at VCC ;
++------------------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 28                          ;
+; cycloneiii_ff         ; 124                         ;
+;     CLR               ; 32                          ;
+;     ENA               ; 44                          ;
+;     ENA CLR           ; 37                          ;
+;     SCLR              ; 1                           ;
+;     plain             ; 10                          ;
+; cycloneiii_lcell_comb ; 382                         ;
+;     arith             ; 20                          ;
+;         2 data inputs ; 20                          ;
+;     normal            ; 362                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 31                          ;
+;         3 data inputs ; 54                          ;
+;         4 data inputs ; 270                         ;
+;                       ;                             ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 5.29                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Apr 13 01:08:46 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LCD_16X2 -c LCD_16X2
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 3 design units, including 1 entities, in source file clk_div.vhd
+    Info (12022): Found design unit 1: clk_div-behavioral File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/clk_div.vhd Line: 9
+    Info (12022): Found design unit 2: clk_div_package File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/clk_div.vhd Line: 33
+    Info (12023): Found entity 1: clk_div File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/clk_div.vhd Line: 3
+Info (12021): Found 3 design units, including 1 entities, in source file keytoascii.vhd
+    Info (12022): Found design unit 1: KeyToASCII-arch File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/KeyToASCII.vhd Line: 10
+    Info (12022): Found design unit 2: KeyToASCII_package File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/KeyToASCII.vhd Line: 40
+    Info (12023): Found entity 1: KeyToASCII File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/KeyToASCII.vhd Line: 5
+Info (12021): Found 3 design units, including 1 entities, in source file entradasteclado.vhd
+    Info (12022): Found design unit 1: EntradasTeclado-arch File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/EntradasTeclado.vhd Line: 17
+    Info (12022): Found design unit 2: EntradasTeclado_package File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/EntradasTeclado.vhd Line: 100
+    Info (12023): Found entity 1: EntradasTeclado File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/EntradasTeclado.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file lcd16x2_ctrl.vhd
+    Info (12022): Found design unit 1: lcd16x2_ctrl-rtl File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl.vhd Line: 44
+    Info (12023): Found entity 1: lcd16x2_ctrl File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file lcd16x2_ctrl_demo.vhd
+    Info (12022): Found design unit 1: lcd16x2_ctrl_demo-behavior File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 49
+    Info (12023): Found entity 1: lcd16x2_ctrl_demo File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 30
+Info (12127): Elaborating entity "lcd16x2_ctrl_demo" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at lcd16x2_ctrl_demo.vhd(39): used implicit default value for signal "ledr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 39
+Warning (10541): VHDL Signal Declaration warning at lcd16x2_ctrl_demo.vhd(40): used implicit default value for signal "dout" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+Warning (10540): VHDL Signal Declaration warning at lcd16x2_ctrl_demo.vhd(92): used explicit default value for signal "solucion" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 92
+Warning (10036): Verilog HDL or VHDL warning at lcd16x2_ctrl_demo.vhd(94): object "clk" assigned a value but never read File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 94
+Warning (10036): Verilog HDL or VHDL warning at lcd16x2_ctrl_demo.vhd(96): object "state" assigned a value but never read File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(129): signal "clk_i" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 129
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(129): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 129
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(129): signal "key_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 129
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(134): signal "clk_i" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 134
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(134): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 134
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(134): signal "key_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 134
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(139): signal "clk_i" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 139
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(139): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 139
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(139): signal "key_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 139
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(169): signal "Dato_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 169
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(172): signal "Opcion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 172
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(174): signal "Dato_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 174
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(179): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 179
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(184): signal "B_Sout_o" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 184
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(186): signal "line1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 186
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(187): signal "line2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 187
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(208): signal "Dato_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 208
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(211): signal "Opcion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 211
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(213): signal "Dato_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 213
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(218): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 218
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(223): signal "B_Sout_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 223
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(225): signal "line1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 225
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(226): signal "line2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 226
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(247): signal "Dato_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 247
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(250): signal "Opcion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 250
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(252): signal "Dato_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 252
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(257): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 257
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(262): signal "B_Sout_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 262
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(265): signal "line1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 265
+Warning (10492): VHDL Process Statement warning at lcd16x2_ctrl_demo.vhd(266): signal "line2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 266
+Info (12128): Elaborating entity "lcd16x2_ctrl" for hierarchy "lcd16x2_ctrl:DUT" File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 103
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:CLK10" File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 118
+Warning (10492): VHDL Process Statement warning at clk_div.vhd(15): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/clk_div.vhd Line: 15
+Info (12128): Elaborating entity "EntradasTeclado" for hierarchy "EntradasTeclado:KB1" File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 120
+Info (12128): Elaborating entity "KeyToASCII" for hierarchy "EntradasTeclado:KB1|KeyToASCII:OUT1" File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/EntradasTeclado.vhd Line: 94
+Info (13000): Registers with preset signals will power-up high File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 126
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "lcd_rw" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 35
+    Warning (13410): Pin "ledr" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 39
+    Warning (13410): Pin "dout[0]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+    Warning (13410): Pin "dout[1]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+    Warning (13410): Pin "dout[2]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+    Warning (13410): Pin "dout[3]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+    Warning (13410): Pin "dout[4]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+    Warning (13410): Pin "dout[5]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+    Warning (13410): Pin "dout[6]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+    Warning (13410): Pin "dout[7]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 40
+    Warning (13410): Pin "beep" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 42
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register Opcion[0] will power up to High File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 126
+    Critical Warning (18010): Register Opcion[4] will power up to Low File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 126
+    Critical Warning (18010): Register Opcion[1] will power up to High File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd Line: 126
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 464 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 436 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Tue Apr 13 01:08:57 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
+
+

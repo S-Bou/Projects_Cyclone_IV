@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Apr 13 01:09:03 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LCD_16X2
+Top-level Entity Name : lcd16x2_ctrl_demo
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 395 / 6,272 ( 6 % )
+    Total combinational functions : 377 / 6,272 ( 6 % )
+    Dedicated logic registers : 124 / 6,272 ( 2 % )
+Total registers : 124
+Total pins : 28 / 92 ( 30 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

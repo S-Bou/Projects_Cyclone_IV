@@ -1,0 +1,6 @@
+
+State Machine - |calculadora|EntradasTeclado:KB|state_reg
+Name state_reg.load state_reg.dps state_reg.idle 
+state_reg.idle 0 0 0 
+state_reg.dps 0 1 1 
+state_reg.load 1 0 1 

@@ -1,5 +1,5 @@
 Flow report for LCD_P1
-Sat Apr 10 21:29:15 2021
+Mon Apr 12 21:47:17 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 10 21:29:13 2021       ;
+; Flow Status                        ; Successful - Mon Apr 12 21:47:14 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LCD_P1                                      ;
-; Top-level Entity Name              ; LIB_LCD_4BITS_REVC                          ;
+; Top-level Entity Name              ; calculadora                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 450 / 6,272 ( 7 % )                         ;
-;     Total combinational functions  ; 450 / 6,272 ( 7 % )                         ;
-;     Dedicated logic registers      ; 75 / 6,272 ( 1 % )                          ;
-; Total registers                    ; 75                                          ;
-; Total pins                         ; 21 / 92 ( 23 % )                            ;
+; Total logic elements               ; 583 / 6,272 ( 9 % )                         ;
+;     Total combinational functions  ; 571 / 6,272 ( 9 % )                         ;
+;     Dedicated logic registers      ; 106 / 6,272 ( 2 % )                         ;
+; Total registers                    ; 106                                         ;
+; Total pins                         ; 22 / 92 ( 24 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -64,29 +64,29 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/10/2021 21:28:53 ;
+; Start date & time ; 04/12/2021 21:46:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LCD_P1              ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                               ;
-+-------------------------------------+----------------------------------------+---------------+--------------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name        ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+--------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 215938450624713.161808293317684        ; --            ; --                 ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                 ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                 ; --         ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --                 ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; LIB_LCD_4BITS_REVC ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; LIB_LCD_4BITS_REVC ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; LIB_LCD_4BITS_REVC ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                 ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                 ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                 ; --         ;
-; TOP_LEVEL_ENTITY                    ; LIB_LCD_4BITS_REVC                     ; LCD_P1        ; --                 ; --         ;
-+-------------------------------------+----------------------------------------+---------------+--------------------+------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 215938450624713.161825681206104        ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; calculadora ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; calculadora ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; calculadora ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; calculadora                            ; LCD_P1        ; --          ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4817 MB             ; 00:00:23                           ;
-; Fitter               ; 00:00:05     ; 1.1                     ; 5630 MB             ; 00:00:07                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4669 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 4777 MB             ; 00:00:02                           ;
-; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4811 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:05     ; 1.1                     ; 5634 MB             ; 00:00:08                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 4781 MB             ; 00:00:02                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

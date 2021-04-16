@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LCD_P1
-Sat Apr 10 21:29:06 2021
+Mon Apr 12 21:47:05 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,16 +13,17 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Source assignments for Top-level Entity: |LIB_LCD_4BITS_REVC
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |LIB_LCD_4BITS_REVC
- 13. Parameter Settings for User Entity Instance: PROCESADOR_LCD4BITS_REVC:u1
- 14. Port Connectivity Checks: "PROCESADOR_LCD4BITS_REVC:u1"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+  8. State Machine - |calculadora|EntradasTeclado:KB|state_reg
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Source assignments for Top-level Entity: |calculadora
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |calculadora
+ 14. Parameter Settings for User Entity Instance: PROCESADOR_LCD4BITS_REVC:u1
+ 15. Port Connectivity Checks: "PROCESADOR_LCD4BITS_REVC:u1"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -48,16 +49,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 10 21:29:06 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 12 21:47:05 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LCD_P1                                      ;
-; Top-level Entity Name              ; LIB_LCD_4BITS_REVC                          ;
+; Top-level Entity Name              ; calculadora                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 454                                         ;
-;     Total combinational functions  ; 449                                         ;
-;     Dedicated logic registers      ; 75                                          ;
-; Total registers                    ; 75                                          ;
-; Total pins                         ; 21                                          ;
+; Total logic elements               ; 592                                         ;
+;     Total combinational functions  ; 570                                         ;
+;     Dedicated logic registers      ; 106                                         ;
+; Total registers                    ; 106                                         ;
+; Total pins                         ; 22                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -71,7 +72,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; LIB_LCD_4BITS_REVC ; LCD_P1             ;
+; Top-level entity name                                            ; calculadora        ; LCD_P1             ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,20 +165,25 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                    ; Library ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; PROCESADOR_LCD4BITS_REVC.vhd        ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/PROCESADOR_LCD4BITS_REVC.vhd        ;         ;
-; LIB_LCD_4BITS_REVC.vhd              ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/LIB_LCD_4BITS_REVC.vhd              ;         ;
-; COMANDOS_LCD4BITS_REVC.vhd          ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/COMANDOS_LCD4BITS_REVC.vhd          ;         ;
-; CARACTERES_ESPECIALES4BITS_REVC.vhd ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/CARACTERES_ESPECIALES4BITS_REVC.vhd ;         ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                             ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
+; COMANDOS_LCD4BITS_REVC.vhd       ; yes             ; User VHDL File        ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/COMANDOS_LCD4BITS_REVC.vhd   ;         ;
+; calculadora.vhd                  ; yes             ; User VHDL File        ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd              ;         ;
+; EntradasTeclado.vhd              ; yes             ; User VHDL File        ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/EntradasTeclado.vhd          ;         ;
+; KeyToASCII.vhd                   ; yes             ; User VHDL File        ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/KeyToASCII.vhd               ;         ;
+; procesador_lcd4bits_revc.vhd     ; yes             ; Auto-Found VHDL File  ; D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/procesador_lcd4bits_revc.vhd ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------+
@@ -185,42 +191,55 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------+
 ; Resource                                    ; Usage                              ;
 +---------------------------------------------+------------------------------------+
-; Estimated Total logic elements              ; 454                                ;
+; Estimated Total logic elements              ; 592                                ;
 ;                                             ;                                    ;
-; Total combinational functions               ; 449                                ;
+; Total combinational functions               ; 570                                ;
 ; Logic element usage by number of LUT inputs ;                                    ;
-;     -- 4 input functions                    ; 308                                ;
-;     -- 3 input functions                    ; 56                                 ;
-;     -- <=2 input functions                  ; 85                                 ;
+;     -- 4 input functions                    ; 359                                ;
+;     -- 3 input functions                    ; 112                                ;
+;     -- <=2 input functions                  ; 99                                 ;
 ;                                             ;                                    ;
 ; Logic elements by mode                      ;                                    ;
-;     -- normal mode                          ; 392                                ;
-;     -- arithmetic mode                      ; 57                                 ;
+;     -- normal mode                          ; 504                                ;
+;     -- arithmetic mode                      ; 66                                 ;
 ;                                             ;                                    ;
-; Total registers                             ; 75                                 ;
-;     -- Dedicated logic registers            ; 75                                 ;
+; Total registers                             ; 106                                ;
+;     -- Dedicated logic registers            ; 106                                ;
 ;     -- I/O registers                        ; 0                                  ;
 ;                                             ;                                    ;
-; I/O pins                                    ; 21                                 ;
+; I/O pins                                    ; 22                                 ;
 ;                                             ;                                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                                  ;
 ;                                             ;                                    ;
 ; Maximum fan-out node                        ; PROCESADOR_LCD4BITS_REVC:u1|edo[3] ;
-; Maximum fan-out                             ; 96                                 ;
-; Total fan-out                               ; 1851                               ;
-; Average fan-out                             ; 3.27                               ;
+; Maximum fan-out                             ; 112                                ;
+; Total fan-out                               ; 2370                               ;
+; Average fan-out                             ; 3.29                               ;
 +---------------------------------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
-+----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------------------+--------------+
-; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name              ; Library Name ;
-+----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------------------+--------------+
-; |LIB_LCD_4BITS_REVC              ; 449 (8)             ; 75 (0)                    ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |LIB_LCD_4BITS_REVC                             ; LIB_LCD_4BITS_REVC       ; work         ;
-;    |PROCESADOR_LCD4BITS_REVC:u1| ; 441 (441)           ; 75 (75)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIB_LCD_4BITS_REVC|PROCESADOR_LCD4BITS_REVC:u1 ; PROCESADOR_LCD4BITS_REVC ; work         ;
-+----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                              ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Entity Name              ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------------------+--------------+
+; |calculadora                     ; 570 (14)            ; 106 (0)                   ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |calculadora                             ; calculadora              ; work         ;
+;    |EntradasTeclado:KB|          ; 20 (20)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculadora|EntradasTeclado:KB          ; EntradasTeclado          ; work         ;
+;    |PROCESADOR_LCD4BITS_REVC:u1| ; 536 (536)           ; 80 (80)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculadora|PROCESADOR_LCD4BITS_REVC:u1 ; PROCESADOR_LCD4BITS_REVC ; work         ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |calculadora|EntradasTeclado:KB|state_reg        ;
++----------------+----------------+---------------+----------------+
+; Name           ; state_reg.load ; state_reg.dps ; state_reg.idle ;
++----------------+----------------+---------------+----------------+
+; state_reg.idle ; 0              ; 0             ; 0              ;
+; state_reg.dps  ; 0              ; 1             ; 1              ;
+; state_reg.load ; 1              ; 0             ; 1              ;
++----------------+----------------+---------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -229,17 +248,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                                                 ; Reason for Removal                                      ;
 +---------------------------------------------------------------+---------------------------------------------------------+
 ; PROCESADOR_LCD4BITS_REVC:u1|vec_l_ram[3..7]                   ; Stuck at GND due to stuck port data_in                  ;
-; PROCESADOR_LCD4BITS_REVC:u1|vec_ram[0..2,7]                   ; Stuck at GND due to stuck port data_in                  ;
-; PROCESADOR_LCD4BITS_REVC:u1|vec_l_ram[0..2]                   ; Stuck at GND due to stuck port data_in                  ;
 ; PROCESADOR_LCD4BITS_REVC:u1|vec_c_char[0..39]                 ; Stuck at GND due to stuck port data_in                  ;
-; PROCESADOR_LCD4BITS_REVC:u1|vec_ram[3..6]                     ; Stuck at GND due to stuck port data_in                  ;
+; PROCESADOR_LCD4BITS_REVC:u1|vec_ram[0..2,7]                   ; Stuck at GND due to stuck port data_in                  ;
 ; PROCESADOR_LCD4BITS_REVC:u1|RW                                ; Stuck at GND due to stuck port data_in                  ;
 ; PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[1,4..6,8..12,14..16] ; Stuck at GND due to stuck port data_in                  ;
 ; PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[13]                  ; Merged with PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[7] ;
 ; PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[7]                   ; Merged with PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[3] ;
 ; PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[3]                   ; Merged with PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[2] ;
 ; PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[2]                   ; Merged with PROCESADOR_LCD4BITS_REVC:u1|ciclo_enable[0] ;
-; Total Number of Removed Registers = 73                        ;                                                         ;
+; Total Number of Removed Registers = 66                        ;                                                         ;
 +---------------------------------------------------------------+---------------------------------------------------------+
 
 
@@ -248,64 +265,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 75    ;
+; Total registers                              ; 106   ;
 ; Number of registers using Synchronous Clear  ; 40    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 7     ;
+; Number of registers using Asynchronous Clear ; 26    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 61    ;
+; Number of registers using Clock Enable       ; 74    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |LIB_LCD_4BITS_REVC|PROCESADOR_LCD4BITS_REVC:u1|dir_mem_s[3]    ;
-; 128:1              ; 19 bits   ; 1615 LEs      ; 171 LEs              ; 1444 LEs               ; Yes        ; |LIB_LCD_4BITS_REVC|PROCESADOR_LCD4BITS_REVC:u1|RW              ;
-; 8:1                ; 23 bits   ; 115 LEs       ; 23 LEs               ; 92 LEs                 ; Yes        ; |LIB_LCD_4BITS_REVC|PROCESADOR_LCD4BITS_REVC:u1|conta_delay[20] ;
-; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |LIB_LCD_4BITS_REVC|PROCESADOR_LCD4BITS_REVC:u1|data_s[4]       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |calculadora|PROCESADOR_LCD4BITS_REVC:u1|dir_mem_s[2]    ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |calculadora|EntradasTeclado:KB|b_reg[10]                ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |calculadora|EntradasTeclado:KB|n_reg[3]                 ;
+; 128:1              ; 19 bits   ; 1615 LEs      ; 171 LEs              ; 1444 LEs               ; Yes        ; |calculadora|PROCESADOR_LCD4BITS_REVC:u1|RS              ;
+; 8:1                ; 23 bits   ; 115 LEs       ; 23 LEs               ; 92 LEs                 ; Yes        ; |calculadora|PROCESADOR_LCD4BITS_REVC:u1|conta_delay[19] ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |calculadora|PROCESADOR_LCD4BITS_REVC:u1|data_s[6]       ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |calculadora|PROCESADOR_LCD4BITS_REVC:u1|vec_ram[5]      ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |calculadora|PROCESADOR_LCD4BITS_REVC:u1|vec_l_ram[1]    ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |calculadora|Mux2                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
-+--------------------------------------------------------------+
-; Source assignments for Top-level Entity: |LIB_LCD_4BITS_REVC ;
-+------------+--------+------+---------------------------------+
-; Assignment ; Value  ; From ; To                              ;
-+------------+--------+------+---------------------------------+
-; LOCATION   ; Pin_68 ; -    ; DATA_LCD[3]                     ;
-; LOCATION   ; Pin_66 ; -    ; DATA_LCD[2]                     ;
-; LOCATION   ; Pin_64 ; -    ; DATA_LCD[1]                     ;
-; LOCATION   ; Pin_59 ; -    ; DATA_LCD[0]                     ;
-; LOCATION   ; Pin_28 ; -    ; GND[5]                          ;
-; LOCATION   ; Pin_49 ; -    ; GND[4]                          ;
-; LOCATION   ; Pin_51 ; -    ; GND[3]                          ;
-; LOCATION   ; Pin_53 ; -    ; GND[2]                          ;
-; LOCATION   ; Pin_55 ; -    ; GND[1]                          ;
-; LOCATION   ; Pin_72 ; -    ; GND[0]                          ;
-; LOCATION   ; Pin_23 ; -    ; CLK                             ;
-; LOCATION   ; Pin_38 ; -    ; RS                              ;
-; LOCATION   ; Pin_42 ; -    ; RW                              ;
-; LOCATION   ; Pin_44 ; -    ; ENA                             ;
-; LOCATION   ; Pin_31 ; -    ; VDD                             ;
-; LOCATION   ; Pin_33 ; -    ; CONTRAS                         ;
-; LOCATION   ; Pin_70 ; -    ; ANODE                           ;
-; LOCATION   ; Pin_73 ; -    ; GROUND                          ;
-; LOCATION   ; Pin_75 ; -    ; CINCOV                          ;
-; LOCATION   ; Pin_83 ; -    ; POT                             ;
-; LOCATION   ; Pin_77 ; -    ; R_LED                           ;
-+------------+--------+------+---------------------------------+
++-------------------------------------------------------+
+; Source assignments for Top-level Entity: |calculadora ;
++------------+---------+------+-------------------------+
+; Assignment ; Value   ; From ; To                      ;
++------------+---------+------+-------------------------+
+; LOCATION   ; Pin_68  ; -    ; DATA_LCD[3]             ;
+; LOCATION   ; Pin_66  ; -    ; DATA_LCD[2]             ;
+; LOCATION   ; Pin_64  ; -    ; DATA_LCD[1]             ;
+; LOCATION   ; Pin_59  ; -    ; DATA_LCD[0]             ;
+; LOCATION   ; Pin_128 ; -    ; dout[7]                 ;
+; LOCATION   ; Pin_121 ; -    ; dout[6]                 ;
+; LOCATION   ; Pin_125 ; -    ; dout[5]                 ;
+; LOCATION   ; Pin_129 ; -    ; dout[4]                 ;
+; LOCATION   ; Pin_132 ; -    ; dout[3]                 ;
+; LOCATION   ; Pin_126 ; -    ; dout[2]                 ;
+; LOCATION   ; Pin_124 ; -    ; dout[1]                 ;
+; LOCATION   ; Pin_127 ; -    ; dout[0]                 ;
+; LOCATION   ; Pin_23  ; -    ; CLK                     ;
+; LOCATION   ; Pin_38  ; -    ; RS                      ;
+; LOCATION   ; Pin_42  ; -    ; RW                      ;
+; LOCATION   ; Pin_44  ; -    ; ENA                     ;
+; LOCATION   ; Pin_133 ; -    ; digit1                  ;
+; LOCATION   ; Pin_88  ; -    ; reset                   ;
+; LOCATION   ; Pin_120 ; -    ; ps2d                    ;
+; LOCATION   ; Pin_119 ; -    ; ps2c                    ;
+; LOCATION   ; Pin_91  ; -    ; rx_en                   ;
+; LOCATION   ; Pin_84  ; -    ; rx_done_tick            ;
++------------+---------+------+-------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |LIB_LCD_4BITS_REVC ;
-+----------------+----------+--------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                   ;
-+----------------+----------+--------------------------------------------------------+
-; FPGA_CLK       ; 50000000 ; Signed Integer                                         ;
-+----------------+----------+--------------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |calculadora ;
++----------------+----------+-------------------------------------------------+
+; Parameter Name ; Value    ; Type                                            ;
++----------------+----------+-------------------------------------------------+
+; FPGA_CLK       ; 50000000 ; Signed Integer                                  ;
++----------------+----------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -315,7 +338,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value    ; Type                                         ;
 +----------------+----------+----------------------------------------------+
 ; fpga_clk       ; 50000000 ; Signed Integer                               ;
-; num_inst       ; 15       ; Signed Integer                               ;
+; num_inst       ; 6        ; Signed Integer                               ;
 +----------------+----------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -325,6 +348,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
+; c1a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c2a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c3a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c4a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c5a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c6a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c7a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c8a    ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; bd_lcd ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -334,23 +365,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 21                          ;
-; cycloneiii_ff         ; 75                          ;
-;     ENA               ; 21                          ;
+; boundary_port         ; 22                          ;
+; cycloneiii_ff         ; 106                         ;
+;     CLR               ; 16                          ;
+;     ENA               ; 17                          ;
+;     ENA CLR           ; 10                          ;
 ;     ENA SCLR          ; 40                          ;
-;     plain             ; 14                          ;
-; cycloneiii_lcell_comb ; 450                         ;
-;     arith             ; 57                          ;
-;         2 data inputs ; 57                          ;
-;     normal            ; 393                         ;
+;     ENA SLD           ; 7                           ;
+;     plain             ; 16                          ;
+; cycloneiii_lcell_comb ; 572                         ;
+;     arith             ; 66                          ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 8                           ;
+;     normal            ; 506                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 23                          ;
-;         3 data inputs ; 56                          ;
-;         4 data inputs ; 308                         ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 39                          ;
+;         3 data inputs ; 104                         ;
+;         4 data inputs ; 359                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 4.93                        ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 5.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -369,38 +404,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Apr 10 21:28:53 2021
+    Info: Processing started: Mon Apr 12 21:46:52 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LCD_P1 -c LCD_P1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file procesador_lcd4bits_revc.vhd
-    Info (12022): Found design unit 1: PROCESADOR_LCD4BITS_REVC-Behavioral File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/PROCESADOR_LCD4BITS_REVC.vhd Line: 31
-    Info (12023): Found entity 1: PROCESADOR_LCD4BITS_REVC File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/PROCESADOR_LCD4BITS_REVC.vhd Line: 10
-Info (12021): Found 2 design units, including 1 entities, in source file lib_lcd_4bits_revc.vhd
-    Info (12022): Found design unit 1: LIB_LCD_4BITS_REVC-Behavioral File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/LIB_LCD_4BITS_REVC.vhd Line: 211
-    Info (12023): Found entity 1: LIB_LCD_4BITS_REVC File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/LIB_LCD_4BITS_REVC.vhd Line: 175
 Info (12021): Found 2 design units, including 0 entities, in source file comandos_lcd4bits_revc.vhd
-    Info (12022): Found design unit 1: COMANDOS_LCD4BITS_REVC File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/COMANDOS_LCD4BITS_REVC.vhd Line: 10
-    Info (12022): Found design unit 2: COMANDOS_LCD4BITS_REVC-body File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/COMANDOS_LCD4BITS_REVC.vhd Line: 46
-Info (12021): Found 2 design units, including 1 entities, in source file caracteres_especiales4bits_revc.vhd
-    Info (12022): Found design unit 1: CARACTERES_ESPECIALES4BITS_REVC-Behavioral File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/CARACTERES_ESPECIALES4BITS_REVC.vhd Line: 12
-    Info (12023): Found entity 1: CARACTERES_ESPECIALES4BITS_REVC File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/CARACTERES_ESPECIALES4BITS_REVC.vhd Line: 4
-Info (12127): Elaborating entity "LIB_LCD_4BITS_REVC" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at LIB_LCD_4BITS_REVC.vhd(261): object "blcd" assigned a value but never read File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/LIB_LCD_4BITS_REVC.vhd Line: 261
-Info (12128): Elaborating entity "PROCESADOR_LCD4BITS_REVC" for hierarchy "PROCESADOR_LCD4BITS_REVC:u1" File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/LIB_LCD_4BITS_REVC.vhd Line: 298
-Info (12128): Elaborating entity "CARACTERES_ESPECIALES4BITS_REVC" for hierarchy "CARACTERES_ESPECIALES4BITS_REVC:U2" File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/LIB_LCD_4BITS_REVC.vhd Line: 305
+    Info (12022): Found design unit 1: COMANDOS_LCD4BITS_REVC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/COMANDOS_LCD4BITS_REVC.vhd Line: 10
+    Info (12022): Found design unit 2: COMANDOS_LCD4BITS_REVC-body File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/COMANDOS_LCD4BITS_REVC.vhd Line: 46
+Info (12021): Found 2 design units, including 1 entities, in source file calculadora.vhd
+    Info (12022): Found design unit 1: calculadora-Behavioral File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 28
+    Info (12023): Found entity 1: calculadora File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 7
+Info (12021): Found 3 design units, including 1 entities, in source file entradasteclado.vhd
+    Info (12022): Found design unit 1: EntradasTeclado-arch File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/EntradasTeclado.vhd Line: 17
+    Info (12022): Found design unit 2: EntradasTeclado_package File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/EntradasTeclado.vhd Line: 112
+    Info (12023): Found entity 1: EntradasTeclado File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/EntradasTeclado.vhd Line: 7
+Info (12021): Found 3 design units, including 1 entities, in source file keytoascii.vhd
+    Info (12022): Found design unit 1: KeyToASCII-arch File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/KeyToASCII.vhd Line: 10
+    Info (12022): Found design unit 2: KeyToASCII_package File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/KeyToASCII.vhd Line: 76
+    Info (12023): Found entity 1: KeyToASCII File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/KeyToASCII.vhd Line: 5
+Info (12127): Elaborating entity "calculadora" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at calculadora.vhd(70): object "blcd" assigned a value but never read File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 70
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(72): used explicit default value for signal "c1s" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 72
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(72): used explicit default value for signal "c2s" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 72
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(72): used explicit default value for signal "c3s" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 72
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(72): used explicit default value for signal "c4s" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 72
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(73): used explicit default value for signal "c5s" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 73
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(73): used explicit default value for signal "c6s" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 73
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(73): used explicit default value for signal "c7s" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 73
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(73): used explicit default value for signal "c8s" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 73
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(83): used explicit default value for signal "fila" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 83
+Warning (10540): VHDL Signal Declaration warning at calculadora.vhd(84): used explicit default value for signal "columna" because signal was never assigned a value File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 84
+Warning (12125): Using design file procesador_lcd4bits_revc.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: PROCESADOR_LCD4BITS_REVC-Behavioral File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/procesador_lcd4bits_revc.vhd Line: 31
+    Info (12023): Found entity 1: PROCESADOR_LCD4BITS_REVC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/procesador_lcd4bits_revc.vhd Line: 10
+Info (12128): Elaborating entity "PROCESADOR_LCD4BITS_REVC" for hierarchy "PROCESADOR_LCD4BITS_REVC:u1" File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 121
+Info (12128): Elaborating entity "EntradasTeclado" for hierarchy "EntradasTeclado:KB" File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 133
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "RW" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_CYCLONE_IV/Pruebas_LCD/LIB_LCD_4BITS_REVC.vhd Line: 187
+    Warning (13410): Pin "RW" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 14
+    Warning (13410): Pin "digit1" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/calculadora.vhd Line: 19
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 475 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 617 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 454 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4817 megabytes
-    Info: Processing ended: Sat Apr 10 21:29:06 2021
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 595 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Mon Apr 12 21:47:05 2021
     Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:24
 

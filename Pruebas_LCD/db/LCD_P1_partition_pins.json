@@ -28,59 +28,59 @@
 					"strict" : false
 				},
 				{
-					"name" : "GND[0]",
+					"name" : "rx_done_tick",
 					"strict" : false
 				},
 				{
-					"name" : "GND[1]",
+					"name" : "dout[0]",
 					"strict" : false
 				},
 				{
-					"name" : "GND[2]",
+					"name" : "dout[1]",
 					"strict" : false
 				},
 				{
-					"name" : "GND[3]",
+					"name" : "dout[2]",
 					"strict" : false
 				},
 				{
-					"name" : "GND[4]",
+					"name" : "dout[3]",
 					"strict" : false
 				},
 				{
-					"name" : "GND[5]",
+					"name" : "dout[4]",
 					"strict" : false
 				},
 				{
-					"name" : "VDD",
+					"name" : "dout[5]",
 					"strict" : false
 				},
 				{
-					"name" : "CONTRAS",
+					"name" : "dout[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ANODE",
-					"strict" : false
-				},
-				{
-					"name" : "GROUND",
-					"strict" : false
-				},
-				{
-					"name" : "CINCOV",
-					"strict" : false
-				},
-				{
-					"name" : "POT",
-					"strict" : false
-				},
-				{
-					"name" : "R_LED",
+					"name" : "dout[7]",
 					"strict" : false
 				},
 				{
 					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "rx_en",
+					"strict" : false
+				},
+				{
+					"name" : "ps2c",
+					"strict" : false
+				},
+				{
+					"name" : "ps2d",
 					"strict" : false
 				}
 			]

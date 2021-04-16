@@ -1,0 +1,16 @@
+-- begin_signature
+-- calculadora
+-- end_signature
+WIDTH=9;
+DEPTH=8;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	4 :	000000000;
+	3 :	000000000;
+	2 :	000000000;
+	1 :	000000000;
+	0 :	000000000;
+END;

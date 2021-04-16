@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "lcd_e",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_rs",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_db[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_db[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_db[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_db[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_done_tick",
+					"strict" : false
+				},
+				{
+					"name" : "clk_i",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "step",
+					"strict" : false
+				},
+				{
+					"name" : "rx_en",
+					"strict" : false
+				},
+				{
+					"name" : "ps2c",
+					"strict" : false
+				},
+				{
+					"name" : "ps2d",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
