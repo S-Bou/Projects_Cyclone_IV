@@ -1,5 +1,5 @@
 Flow report for LCD_16X2
-Sat Apr 17 17:15:11 2021
+Sun Apr 18 08:27:19 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 17 17:15:08 2021       ;
+; Flow Status                        ; Successful - Sun Apr 18 08:27:16 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LCD_16X2                                    ;
 ; Top-level Entity Name              ; calcu_main                                  ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 853 / 6,272 ( 14 % )                        ;
-;     Total combinational functions  ; 845 / 6,272 ( 13 % )                        ;
+; Total logic elements               ; 839 / 6,272 ( 13 % )                        ;
+;     Total combinational functions  ; 832 / 6,272 ( 13 % )                        ;
 ;     Dedicated logic registers      ; 113 / 6,272 ( 2 % )                         ;
 ; Total registers                    ; 113                                         ;
 ; Total pins                         ; 36 / 92 ( 39 % )                            ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/17/2021 17:14:43 ;
+; Start date & time ; 04/18/2021 08:26:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LCD_16X2            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 215938450624713.161867248305876        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 215938450624713.161872721015968        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4831 MB             ; 00:00:23                           ;
-; Fitter               ; 00:00:10     ; 1.1                     ; 5632 MB             ; 00:00:15                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4671 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4786 MB             ; 00:00:02                           ;
-; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:41                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4813 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:11     ; 1.1                     ; 5634 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4673 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 4786 MB             ; 00:00:03                           ;
+; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -263,47 +263,9 @@ begin  -- architecture behavior
 		case estado is
 			when S1 =>
 			
-				if key_out /= "00001101" then -- Pulsador KEY 4
+				if key_out /= "00001101" then -- Distinto de ENTER
 				
 				   dato1 <= key_out;
-	
-					line1(127 downto 120) <= X"50"; -- P
-					line1(119 downto 112) <= X"72"; -- r
-					line1(111 downto 104) <= X"69"; -- i 
-					line1(103 downto 96)  <= X"6D"; -- m 
-					line1(95 downto 88)   <= X"65"; -- e
-					line1(87 downto 80)   <= X"72"; -- r
-					line1(79 downto 72)   <= X"20";  
-					line1(71 downto 64)   <= X"64"; -- d
-					line1(63 downto 56)   <= X"61"; -- a 
-					line1(55 downto 48)   <= X"74"; -- t 
-					line1(47 downto 40)   <= X"6F"; -- o 
-					line1(39 downto 32)   <= X"3F"; -- ? 
-					line1(31 downto 24)   <= X"20";  
-					line1(23 downto 16)   <= X"20";  
-					line1(15 downto 8)    <= X"53"; -- S
-					line1(7 downto 0)     <= X"31"; -- 1			
-
-					line2(127 downto 120) <= dato1;
-					line2(119 downto 112) <= X"20";
-					line2(111 downto 104) <= X"20";
-					line2(103 downto 96)  <= X"20";
-					line2(95 downto 88)   <= X"20";
-					line2(87 downto 80)   <= X"20";
-					line2(79 downto 72)   <= X"20";
-					line2(71 downto 64)   <= X"20";
-					line2(63 downto 56)   <= X"20";
-					line2(55 downto 48)   <= X"20";
-					line2(47 downto 40)   <= X"20";
-					line2(39 downto 32)   <= X"20";
-					line2(31 downto 24)   <= X"20";
-					line2(23 downto 16)   <= X"20";
-					line2(15 downto 8)    <= X"4B"; -- K
-					line2(7 downto 0)     <= key_out;
-													
-					line1_buffer <= line1;
-					line2_buffer <= line2;
-	
 					sig_estado <= S2;		
 					
 				else
@@ -354,61 +316,23 @@ begin  -- architecture behavior
 			if key_out /= dato1 then
 			
             operador <= key_out;
-	
-				line1(127 downto 120) <= X"53"; -- S
-				line1(119 downto 112) <= X"65"; -- e
-				line1(111 downto 104) <= X"6C"; -- l 
-				line1(103 downto 96)  <= X"20";  
-				line1(95 downto 88)   <= X"4F"; -- O 
-				line1(87 downto 80)   <= X"70"; -- p
-				line1(79 downto 72)   <= X"3A"; -- :
-				line1(71 downto 64)   <= X"2B"; -- +
-				line1(63 downto 56)   <= X"20";  
-				line1(55 downto 48)   <= X"2D"; -- - 
-				line1(47 downto 40)   <= X"20";  
-				line1(39 downto 32)   <= X"78"; -- x 
-				line1(31 downto 24)   <= X"20";  
-				line1(23 downto 16)   <= X"20";  
-				line1(15 downto 8)    <= X"53"; -- S
-				line1(7 downto 0)     <= X"32"; -- 2
-
-				line2(127 downto 120) <= dato1;
-				line2(119 downto 112) <= X"20";
-				line2(111 downto 104) <= operador;
-				line2(103 downto 96)  <= X"20";
-				line2(95 downto 88)   <= x"20";
-				line2(87 downto 80)   <= X"20";
-				line2(79 downto 72)   <= X"20";
-				line2(71 downto 64)   <= X"20";
-				line2(63 downto 56)   <= X"20";
-				line2(55 downto 48)   <= X"20";
-				line2(47 downto 40)   <= X"20";
-				line2(39 downto 32)   <= X"20";
-				line2(31 downto 24)   <= X"20";
-				line2(23 downto 16)   <= X"20";
-				line2(15 downto 8)    <= X"4B";
-				line2(7 downto 0)     <= key_out;
-												
-				line1_buffer <= line1;
-				line2_buffer <= line2;	
-	
 				sig_estado <= S3;
 				
 			else
 			
-				line1(127 downto 120) <= X"53"; -- S
-				line1(119 downto 112) <= X"65"; -- e
-				line1(111 downto 104) <= X"6C"; -- l 
-				line1(103 downto 96)  <= X"20";  
-				line1(95 downto 88)   <= X"4F"; -- O 
-				line1(87 downto 80)   <= X"70"; -- p
-				line1(79 downto 72)   <= X"3A"; -- :
-				line1(71 downto 64)   <= X"2B"; -- +
-				line1(63 downto 56)   <= X"20";  
-				line1(55 downto 48)   <= X"2D"; -- - 
-				line1(47 downto 40)   <= X"20";  
-				line1(39 downto 32)   <= X"78"; -- x 
-				line1(31 downto 24)   <= X"20";  
+				line1(127 downto 120) <= X"4F"; -- O
+				line1(119 downto 112) <= X"70"; -- p
+				line1(111 downto 104) <= X"65"; -- e 
+				line1(103 downto 96)  <= X"72"; -- r
+				line1(95 downto 88)   <= X"61"; -- a 
+				line1(87 downto 80)   <= X"64"; -- d
+				line1(79 downto 72)   <= X"6F"; -- o
+				line1(71 downto 64)   <= X"72"; -- r
+				line1(63 downto 56)   <= X"3A"; -- :  
+				line1(55 downto 48)   <= X"2B"; -- + 
+				line1(47 downto 40)   <= X"2D"; -- -  
+				line1(39 downto 32)   <= X"78"; -- x
+				line1(31 downto 24)   <= X"63"; -- c 
 				line1(23 downto 16)   <= X"20";  
 				line1(15 downto 8)    <= X"53"; -- S
 				line1(7 downto 0)     <= X"32"; -- 2
@@ -441,47 +365,9 @@ begin  -- architecture behavior
 			
 			if key_out /= operador then
 			
-			   dato2 <= key_out;
-
-				line1(127 downto 120) <= X"53"; -- S
-				line1(119 downto 112) <= X"65"; -- e
-				line1(111 downto 104) <= X"67"; -- g
-				line1(103 downto 96)  <= X"75"; -- u
-				line1(95 downto 88)   <= X"6E"; -- n
-				line1(87 downto 80)   <= X"64"; -- d
-				line1(79 downto 72)   <= X"6F"; -- o 
-				line1(71 downto 64)   <= X"20"; 
-				line1(63 downto 56)   <= X"64"; -- d
-				line1(55 downto 48)   <= X"61"; -- a
-				line1(47 downto 40)   <= X"74"; -- t
-				line1(39 downto 32)   <= X"6F"; -- o
-				line1(31 downto 24)   <= X"3F"; -- ? 
-				line1(23 downto 16)   <= X"20";  
-				line1(15 downto 8)    <= X"53"; -- S
-				line1(7 downto 0)     <= X"33"; -- 3
-
-				line2(127 downto 120) <= dato1;
-				line2(119 downto 112) <= X"20";
-				line2(111 downto 104) <= operador;
-				line2(103 downto 96)  <= X"20";
-				line2(95 downto 88)   <= dato2;
-				line2(87 downto 80)   <= X"20";
-				line2(79 downto 72)   <= X"20";
-				line2(71 downto 64)   <= X"20";
-				line2(63 downto 56)   <= X"20";
-				line2(55 downto 48)   <= X"20";
-				line2(47 downto 40)   <= X"20";
-				line2(39 downto 32)   <= X"20";
-				line2(31 downto 24)   <= X"20";
-				line2(23 downto 16)   <= X"20";
-				line2(15 downto 8)    <= X"4B";
-				line2(7 downto 0)     <= key_out;
-												
-
-				line1_buffer <= line1;
-				line2_buffer <= line2;	
-			
-				sig_estado <= S4;			
+			   dato2 <= key_out;	
+				sig_estado <= S4;	
+				
 			else
 			
 				line1(127 downto 120) <= X"53"; -- S

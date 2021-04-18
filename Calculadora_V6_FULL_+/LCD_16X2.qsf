@@ -62,7 +62,6 @@ set_global_assignment -name VHDL_FILE KeyToASCII.vhd
 set_global_assignment -name VHDL_FILE lcd16x2_ctrl.vhd
 set_global_assignment -name VHDL_FILE calcu_main.vhd
 set_global_assignment -name VHDL_FILE keyboard_in.vhd
-set_global_assignment -name VHDL_FILE ASCIIToBin.vhd
 set_global_assignment -name VHDL_FILE adder4b.vhd
 set_global_assignment -name VHDL_FILE subtractor4b.vhd
 set_global_assignment -name VHDL_FILE multiplier4b.vhd
