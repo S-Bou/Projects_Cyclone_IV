@@ -497,6 +497,8 @@ begin  -- architecture behavior
 				line2(15 downto 8)    <= X"4B"; -- K
 				line2(7 downto 0)     <= key_out;			
 
+				sig_estado <= S1;
+				
       end case;
 	end process LCD;	
 	
@@ -553,7 +555,8 @@ begin  -- architecture behavior
 			when others =>   
 				outdig   <= "1110"; -- (...E)=Error
 				outled <= "10";
-			   othersled <= "010001";				
+			   othersled <= "010001";	
+				sig_disp <= D1;			
 		end case;
 	end process Display_BIN;
 	

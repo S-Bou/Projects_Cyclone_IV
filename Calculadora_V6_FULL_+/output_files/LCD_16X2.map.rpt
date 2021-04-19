@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LCD_16X2
-Sun Apr 18 08:27:02 2021
+Mon Apr 19 08:59:49 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 18 08:27:02 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 19 08:59:49 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LCD_16X2                                    ;
 ; Top-level Entity Name              ; calcu_main                                  ;
@@ -171,7 +171,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.1%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-6         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -678,7 +679,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -688,7 +689,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Apr 18 08:26:49 2021
+    Info: Processing started: Mon Apr 19 08:59:32 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LCD_16X2 -c LCD_16X2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -792,26 +793,26 @@ Warning (10631): VHDL Process Statement warning at calcu_main.vhd(261): inferrin
 Warning (10631): VHDL Process Statement warning at calcu_main.vhd(261): inferring latch(es) for signal or variable "line2_buffer", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 261
 Warning (10631): VHDL Process Statement warning at calcu_main.vhd(261): inferring latch(es) for signal or variable "operador", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 261
 Warning (10631): VHDL Process Statement warning at calcu_main.vhd(261): inferring latch(es) for signal or variable "dato2", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 261
-Warning (10492): VHDL Process Statement warning at calcu_main.vhd(506): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 506
-Warning (10492): VHDL Process Statement warning at calcu_main.vhd(520): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 520
-Warning (10492): VHDL Process Statement warning at calcu_main.vhd(529): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 529
-Warning (10492): VHDL Process Statement warning at calcu_main.vhd(538): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 538
-Warning (10492): VHDL Process Statement warning at calcu_main.vhd(547): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 547
-Warning (10631): VHDL Process Statement warning at calcu_main.vhd(514): inferring latch(es) for signal or variable "outdig", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Warning (10631): VHDL Process Statement warning at calcu_main.vhd(514): inferring latch(es) for signal or variable "outled", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Warning (10631): VHDL Process Statement warning at calcu_main.vhd(514): inferring latch(es) for signal or variable "othersled", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "othersled[0]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "othersled[1]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "othersled[2]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "othersled[3]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "othersled[4]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "othersled[5]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "outled[0]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "outled[1]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "outdig[0]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "outdig[1]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "outdig[2]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-Info (10041): Inferred latch for "outdig[3]" at calcu_main.vhd(514) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
+Warning (10492): VHDL Process Statement warning at calcu_main.vhd(508): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 508
+Warning (10492): VHDL Process Statement warning at calcu_main.vhd(522): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 522
+Warning (10492): VHDL Process Statement warning at calcu_main.vhd(531): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 531
+Warning (10492): VHDL Process Statement warning at calcu_main.vhd(540): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 540
+Warning (10492): VHDL Process Statement warning at calcu_main.vhd(549): signal "solucion" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 549
+Warning (10631): VHDL Process Statement warning at calcu_main.vhd(516): inferring latch(es) for signal or variable "outdig", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Warning (10631): VHDL Process Statement warning at calcu_main.vhd(516): inferring latch(es) for signal or variable "outled", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Warning (10631): VHDL Process Statement warning at calcu_main.vhd(516): inferring latch(es) for signal or variable "othersled", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "othersled[0]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "othersled[1]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "othersled[2]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "othersled[3]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "othersled[4]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "othersled[5]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "outled[0]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "outled[1]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "outdig[0]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "outdig[1]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "outdig[2]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+Info (10041): Inferred latch for "outdig[3]" at calcu_main.vhd(516) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
 Info (10041): Inferred latch for "dato2[0]" at calcu_main.vhd(261) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 261
 Info (10041): Inferred latch for "dato2[1]" at calcu_main.vhd(261) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 261
 Info (10041): Inferred latch for "dato2[2]" at calcu_main.vhd(261) File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 261
@@ -1719,12 +1720,12 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "solled[5]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 19
     Warning (13410): Pin "solled[6]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 19
     Warning (13410): Pin "solled[7]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 19
-    Warning (13410): Pin "othersled[0]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-    Warning (13410): Pin "othersled[1]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-    Warning (13410): Pin "othersled[2]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-    Warning (13410): Pin "othersled[3]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-    Warning (13410): Pin "othersled[4]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
-    Warning (13410): Pin "othersled[5]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 514
+    Warning (13410): Pin "othersled[0]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+    Warning (13410): Pin "othersled[1]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+    Warning (13410): Pin "othersled[2]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+    Warning (13410): Pin "othersled[3]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+    Warning (13410): Pin "othersled[4]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
+    Warning (13410): Pin "othersled[5]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 516
     Warning (13410): Pin "beep" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -1734,9 +1735,9 @@ Info (21057): Implemented 888 device resources after synthesis - the final resou
     Info (21059): Implemented 29 output pins
     Info (21061): Implemented 852 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 277 warnings
-    Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Sun Apr 18 08:27:02 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4830 megabytes
+    Info: Processing ended: Mon Apr 19 08:59:49 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:24
 
 
