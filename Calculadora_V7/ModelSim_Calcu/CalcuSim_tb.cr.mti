@@ -1,0 +1,74 @@
+D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/KeyToASCII.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/KeyToASCII.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity KeyToASCII
+-- Compiling architecture arch of KeyToASCII
+-- Compiling package KeyToASCII_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/calcu_main_tb.vhd {0 {vcom -work work -2002 -explicit -stats=none {D:\Programas\intelFPGA_lite\Projects_Cyclone_IV\Calculadora_V7\calcu_main_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity calcu_main_tb
+-- Compiling architecture behavior_tb of calcu_main_tb
+** Error (suppressible): D:\Programas\intelFPGA_lite\Projects_Cyclone_IV\Calculadora_V7\calcu_main_tb.vhd(49): (vcom-1272) Length of formal "lcd_db" is 4; length of actual is 8.
+** Error: D:\Programas\intelFPGA_lite\Projects_Cyclone_IV\Calculadora_V7\calcu_main_tb.vhd(91): VHDL Compiler exiting
+
+} {10.0 11.0} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+** Error: (vcom-11) Could not find work.adder4b_package.
+** Error (suppressible): D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(2): (vcom-1195) Cannot find expanded name "work.adder4b_package".
+** Error: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(2): Unknown expanded name.
+** Error: (vcom-11) Could not find work.subtractor4b_package.
+** Error (suppressible): D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(3): (vcom-1195) Cannot find expanded name "work.subtractor4b_package".
+** Error: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(3): Unknown expanded name.
+** Error: (vcom-11) Could not find work.multiplier4b_package.
+** Error (suppressible): D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(4): (vcom-1195) Cannot find expanded name "work.multiplier4b_package".
+** Error: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(4): Unknown expanded name.
+** Error: (vcom-11) Could not find work.comparator4b_package.
+** Error (suppressible): D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(5): (vcom-1195) Cannot find expanded name "work.comparator4b_package".
+** Error: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(5): Unknown expanded name.
+** Error: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/alu.vhd(7): VHDL Compiler exiting
+
+} {6.0 7.0 8.0 10.0 11.0 13.0 14.0 16.0 17.0 19.0} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/keyboard_in.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/keyboard_in.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package KeyToASCII_package
+-- Compiling entity keyboard_in
+-- Compiling architecture arch of keyboard_in
+-- Compiling package keyboard_in_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/clk_div.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/clk_div.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clk_div
+-- Compiling architecture behavioral of clk_div
+-- Compiling package clk_div_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/calcu_main.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/calcu_main.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package clk_div_package
+-- Loading package keyboard_in_package
+** Error: (vcom-11) Could not find work.alu_package.
+** Error (suppressible): D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/calcu_main.vhd(6): (vcom-1195) Cannot find expanded name "work.alu_package".
+** Error: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/calcu_main.vhd(6): Unknown expanded name.
+** Error: D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/calcu_main.vhd(9): VHDL Compiler exiting
+
+} {9.0 10.0 11.0 13.0} {}}

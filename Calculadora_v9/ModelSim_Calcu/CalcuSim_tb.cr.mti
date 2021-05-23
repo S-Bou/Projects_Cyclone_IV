@@ -1,0 +1,139 @@
+D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/comparator4b.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/comparator4b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparator4b
+-- Compiling architecture main of comparator4b
+-- Compiling package comparator4b_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/keyboard_in.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/keyboard_in.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package KeyToASCII_package
+-- Compiling entity keyboard_in
+-- Compiling architecture arch of keyboard_in
+-- Compiling package keyboard_in_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/subtractor4b.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/subtractor4b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package fullsubtractor_package
+-- Compiling entity subtractor4b
+-- Compiling architecture main of subtractor4b
+-- Compiling package subtractor4b_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity calcu_main_tb
+-- Compiling architecture behavior_tb of calcu_main_tb
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfadder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfadder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity halfadder
+-- Compiling architecture main of halfadder
+-- Compiling package halfadder_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfsubtractor.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfsubtractor.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity halfsubtractor
+-- Compiling architecture main of halfsubtractor
+-- Compiling package halfsubtractor_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/KeyToASCII.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/KeyToASCII.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity KeyToASCII
+-- Compiling architecture arch of KeyToASCII
+-- Compiling package KeyToASCII_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/adder4b.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/adder4b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package fulladder_package
+-- Compiling entity adder4b
+-- Compiling architecture main of adder4b
+-- Compiling package adder4b_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/lcd16x2_ctrl.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/lcd16x2_ctrl.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lcd16x2_ctrl
+-- Compiling architecture rtl of lcd16x2_ctrl
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/alu.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package adder4b_package
+-- Loading package subtractor4b_package
+-- Loading package multiplier4b_package
+-- Loading package comparator4b_package
+-- Compiling entity alu
+-- Compiling architecture main of alu
+-- Compiling package alu_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/clk_div.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/clk_div.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clk_div
+-- Compiling architecture behavioral of clk_div
+-- Compiling package clk_div_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fulladder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fulladder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package halfadder_package
+-- Compiling entity fulladder
+-- Compiling architecture main of fulladder
+-- Compiling package fulladder_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fullsubtractor.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fullsubtractor.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package halfsubtractor_package
+-- Compiling entity fullsubtractor
+-- Compiling architecture main of fullsubtractor
+-- Compiling package fullsubtractor_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/multiplier4b.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/multiplier4b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package halfadder_package
+-- Loading package fulladder_package
+-- Compiling entity multiplier4b
+-- Compiling architecture main of multiplier4b
+-- Compiling package multiplier4b_package
+
+} {} {}}

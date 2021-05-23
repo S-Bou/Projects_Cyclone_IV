@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6) Path("D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/output_files/") File("calcu.jic") MfrSpec(OpMask(1) SEC_Device(EPCS16) Child_OpMask(1 1));
+		Device PartName(EP4CE6) Path("D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V7/output_files/") File("calcu.jic") MfrSpec(OpMask(1) SEC_Device(EPCS16) Child_OpMask(1 132));
 
 ChainEnd;
 

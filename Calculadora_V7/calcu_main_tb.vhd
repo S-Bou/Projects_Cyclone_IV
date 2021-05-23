@@ -19,7 +19,6 @@ architecture behavior_tb of calcu_main_tb is
 					--Para el teclado
 					reset, ps2d, ps2c, rx_en: in std_logic;	
 					rx_done_tick: out std_logic;
-					solled: out std_logic_vector(7 downto 0);	
 					--Otros
 					outled: out std_logic_vector(1 downto 0);
 					othersled: out std_logic_vector(5 downto 0);
@@ -30,41 +29,64 @@ architecture behavior_tb of calcu_main_tb is
 				);
 	end component;
 	
-	-- Para la LCD
-	signal timer : natural range 0 to 100000000 := 0;
-	signal switch_lines : std_logic := '0';
-	signal line1 : std_logic_vector(127 downto 0);
-	signal line2 : std_logic_vector(127 downto 0);
-
-	-- component generics
-	constant CLK_PERIOD_NS : positive := 10;  -- 100 Mhz
-
-	-- component ports
-	signal rst          : std_logic;
-	signal line1_buffer : std_logic_vector(127 downto 0);
-	signal line2_buffer : std_logic_vector(127 downto 0);
-
-	--Para el teclado	
-	signal dato1, dato2, operador, solucion: std_logic_vector(7 downto 0);		
-	signal anterior, key_out: std_logic_vector(7 downto 0);
+	-- Internal signals
+   signal clk_i_tb: std_logic:='1';  
+	signal lcd_e_tb, lcd_rs_tb, lcd_rw_tb: std_logic;
+	signal lcd_db_tb: std_logic_vector(7 downto 0);
+	signal reset_tb, ps2d_tb, ps2c_tb, rx_en_tb: std_logic;
+   signal rx_done_tick_tb: std_logic;
+	signal outled_tb: std_logic_vector(1 downto 0);
+	signal othersled_tb: std_logic_vector(5 downto 0);
+	signal outdig_tb: std_logic_vector(3 downto 0);		
+	signal beep_tb: std_logic;
+	signal step_tb: std_logic;
+	signal cin_tb: std_logic;	
 	
-	-- Para ajustar digitos en la LCD
-	signal unidades, decenas, case4: std_logic_vector(7 downto 0);
-	
-   -- Para las señales de reloj
-	signal clk, clk_dis: std_logic; 
-	
-   -- Para las FSMs
-	type estados is (S1, S2, S3, S4);
-	signal estado, sig_estado: estados;  
-	
-	type display7sg is (D1, D2, D3, D4);
-	signal disp, sig_disp: display7sg;
-  
 ---------------------------------------------------------------------------------------
 begin  -- architecture behavior
 
+	-- Sistem Under Test
+	SUT: calcu_main port map(clk_i_tb, lcd_e_tb, lcd_rs_tb, lcd_rw_tb, lcd_db_tb, reset_tb, ps2d_tb, ps2c_tb, rx_en_tb, 
+	                         rx_done_tick_tb, outled_tb, othersled_tb, outdig_tb, beep_tb, step_tb, cin_tb);
+	
+	-- 50 MHz CLK
+	clk_i_tb <= not clk_i_tb after 10 ns; 
+	
+	data: process
+	begin
+		reset_tb <= '1';
+		rx_en_tb <= '1';
+		cin_tb   <= '1';
 
+			ps2d_tb  <= '0';
+			ps2d_tb  <= '0';		
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '0';
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '0';
+		wait for 20 ns;
+			ps2d_tb  <= '0';
+			ps2d_tb  <= '0';		
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '0';
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '0';
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '1';
+		wait for 20 ns;
+			ps2d_tb  <= '0';
+			ps2d_tb  <= '0';		
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '0';
+			ps2d_tb  <= '0';
+			ps2d_tb  <= '1';
+			ps2d_tb  <= '1';
+		wait for 20 ns;
+		wait;
+	end process data;
 	
 end architecture behavior_tb;
 

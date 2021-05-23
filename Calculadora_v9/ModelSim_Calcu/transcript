@@ -1,0 +1,773 @@
+# Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ModelSim_Calcu/CalcuSim_tb.mpf
+# Loading project CalcuSim_tb
+vsim -gui work.calcu_main_tb
+# vsim -gui work.calcu_main_tb 
+# Start time: 08:01:10 on May 23,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calcu_main_tb(behavior_tb)
+# Loading work.clk_div_package
+# Loading work.keyboard_in_package
+# Loading work.alu_package
+# Loading work.calcu_main(behavior)
+# Loading work.lcd16x2_ctrl(rtl)
+# Loading work.clk_div(behavioral)
+# Loading work.keytoascii_package
+# Loading work.keyboard_in(arch)
+# Loading work.keytoascii(arch)
+# Loading work.adder4b_package
+# Loading work.subtractor4b_package
+# Loading work.multiplier4b_package
+# Loading work.comparator4b_package
+# Loading work.alu(main)
+# Loading work.fulladder_package
+# Loading work.adder4b(main)
+# Loading work.halfadder_package
+# Loading work.fulladder(main)
+# Loading work.halfadder(main)
+# Loading work.fullsubtractor_package
+# Loading work.subtractor4b(main)
+# Loading work.halfsubtractor_package
+# Loading work.fullsubtractor(main)
+# Loading work.halfsubtractor(main)
+# Loading work.multiplier4b(main)
+# Loading work.comparator4b(main)
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+add wave -position end  sim:/calcu_main_tb/clk_i_tb
+add wave -position end  sim:/calcu_main_tb/lcd_e_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rs_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rw_tb
+add wave -position end  sim:/calcu_main_tb/lcd_db_tb
+add wave -position end  sim:/calcu_main_tb/reset_tb
+add wave -position end  sim:/calcu_main_tb/ps2d_tb
+add wave -position end  sim:/calcu_main_tb/ps2c_tb
+add wave -position end  sim:/calcu_main_tb/rx_en_tb
+add wave -position end  sim:/calcu_main_tb/rx_done_tick_tb
+add wave -position end  sim:/calcu_main_tb/outled_tb
+add wave -position end  sim:/calcu_main_tb/othersled_tb
+add wave -position end  sim:/calcu_main_tb/outdig_tb
+add wave -position end  sim:/calcu_main_tb/beep_tb
+add wave -position end  sim:/calcu_main_tb/step_tb
+add wave -position end  sim:/calcu_main_tb/cin_tb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+run
+quit -sim
+# End time: 08:04:35 on May 23,2021, Elapsed time: 0:03:25
+# Errors: 0, Warnings: 4
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd failed with 4 errors.
+# 15 compiles, 1 failed with 4 errors.
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd failed with 4 errors.
+# 15 compiles, 1 failed with 4 errors.
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd failed with 4 errors.
+# 15 compiles, 1 failed with 4 errors.
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd failed with 7 errors.
+# 15 compiles, 1 failed with 7 errors.
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd failed with 7 errors.
+# 15 compiles, 1 failed with 7 errors.
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd failed with 7 errors.
+# 15 compiles, 1 failed with 7 errors.
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd failed with 3 errors.
+# 15 compiles, 1 failed with 3 errors.
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.calcu_main_tb
+# vsim -gui work.calcu_main_tb 
+# Start time: 08:07:31 on May 23,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calcu_main_tb(behavior_tb)
+# Loading work.clk_div_package
+# Loading work.keyboard_in_package
+# Loading work.alu_package
+# Loading work.calcu_main(behavior)
+# Loading work.lcd16x2_ctrl(rtl)
+# Loading work.clk_div(behavioral)
+# Loading work.keytoascii_package
+# Loading work.keyboard_in(arch)
+# Loading work.keytoascii(arch)
+# Loading work.adder4b_package
+# Loading work.subtractor4b_package
+# Loading work.multiplier4b_package
+# Loading work.comparator4b_package
+# Loading work.alu(main)
+# Loading work.fulladder_package
+# Loading work.adder4b(main)
+# Loading work.halfadder_package
+# Loading work.fulladder(main)
+# Loading work.halfadder(main)
+# Loading work.fullsubtractor_package
+# Loading work.subtractor4b(main)
+# Loading work.halfsubtractor_package
+# Loading work.fullsubtractor(main)
+# Loading work.halfsubtractor(main)
+# Loading work.multiplier4b(main)
+# Loading work.comparator4b(main)
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+add wave -position end  sim:/calcu_main_tb/clk_i_tb
+add wave -position end  sim:/calcu_main_tb/lcd_e_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rs_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rw_tb
+add wave -position end  sim:/calcu_main_tb/lcd_db_tb
+add wave -position end  sim:/calcu_main_tb/reset_tb
+add wave -position end  sim:/calcu_main_tb/ps2d_tb
+add wave -position end  sim:/calcu_main_tb/ps2c_tb
+add wave -position end  sim:/calcu_main_tb/rx_en_tb
+add wave -position end  sim:/calcu_main_tb/rx_done_tick_tb
+add wave -position end  sim:/calcu_main_tb/outled_tb
+add wave -position end  sim:/calcu_main_tb/othersled_tb
+add wave -position end  sim:/calcu_main_tb/outdig_tb
+add wave -position end  sim:/calcu_main_tb/beep_tb
+add wave -position end  sim:/calcu_main_tb/step_tb
+add wave -position end  sim:/calcu_main_tb/cin_tb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+quit -sim
+# End time: 08:08:12 on May 23,2021, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 4
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.calcu_main_tb
+# vsim -gui work.calcu_main_tb 
+# Start time: 08:09:09 on May 23,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calcu_main_tb(behavior_tb)
+# Loading work.clk_div_package
+# Loading work.keyboard_in_package
+# Loading work.alu_package
+# Loading work.calcu_main(behavior)
+# Loading work.lcd16x2_ctrl(rtl)
+# Loading work.clk_div(behavioral)
+# Loading work.keytoascii_package
+# Loading work.keyboard_in(arch)
+# Loading work.keytoascii(arch)
+# Loading work.adder4b_package
+# Loading work.subtractor4b_package
+# Loading work.multiplier4b_package
+# Loading work.comparator4b_package
+# Loading work.alu(main)
+# Loading work.fulladder_package
+# Loading work.adder4b(main)
+# Loading work.halfadder_package
+# Loading work.fulladder(main)
+# Loading work.halfadder(main)
+# Loading work.fullsubtractor_package
+# Loading work.subtractor4b(main)
+# Loading work.halfsubtractor_package
+# Loading work.fullsubtractor(main)
+# Loading work.halfsubtractor(main)
+# Loading work.multiplier4b(main)
+# Loading work.comparator4b(main)
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+add wave -position end  sim:/calcu_main_tb/clk_i_tb
+add wave -position end  sim:/calcu_main_tb/lcd_e_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rs_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rw_tb
+add wave -position end  sim:/calcu_main_tb/lcd_db_tb
+add wave -position end  sim:/calcu_main_tb/reset_tb
+add wave -position end  sim:/calcu_main_tb/ps2d_tb
+add wave -position end  sim:/calcu_main_tb/ps2c_tb
+add wave -position end  sim:/calcu_main_tb/rx_en_tb
+add wave -position end  sim:/calcu_main_tb/rx_done_tick_tb
+add wave -position end  sim:/calcu_main_tb/outled_tb
+add wave -position end  sim:/calcu_main_tb/othersled_tb
+add wave -position end  sim:/calcu_main_tb/outdig_tb
+add wave -position end  sim:/calcu_main_tb/beep_tb
+add wave -position end  sim:/calcu_main_tb/step_tb
+add wave -position end  sim:/calcu_main_tb/cin_tb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+run
+quit -sim
+# End time: 08:12:08 on May 23,2021, Elapsed time: 0:02:59
+# Errors: 0, Warnings: 4
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.calcu_main_tb
+# vsim -gui work.calcu_main_tb 
+# Start time: 08:12:21 on May 23,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calcu_main_tb(behavior_tb)
+# Loading work.clk_div_package
+# Loading work.keyboard_in_package
+# Loading work.alu_package
+# Loading work.calcu_main(behavior)
+# Loading work.lcd16x2_ctrl(rtl)
+# Loading work.clk_div(behavioral)
+# Loading work.keytoascii_package
+# Loading work.keyboard_in(arch)
+# Loading work.keytoascii(arch)
+# Loading work.adder4b_package
+# Loading work.subtractor4b_package
+# Loading work.multiplier4b_package
+# Loading work.comparator4b_package
+# Loading work.alu(main)
+# Loading work.fulladder_package
+# Loading work.adder4b(main)
+# Loading work.halfadder_package
+# Loading work.fulladder(main)
+# Loading work.halfadder(main)
+# Loading work.fullsubtractor_package
+# Loading work.subtractor4b(main)
+# Loading work.halfsubtractor_package
+# Loading work.fullsubtractor(main)
+# Loading work.halfsubtractor(main)
+# Loading work.multiplier4b(main)
+# Loading work.comparator4b(main)
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+add wave -position end  sim:/calcu_main_tb/clk_i_tb
+add wave -position end  sim:/calcu_main_tb/lcd_e_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rs_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rw_tb
+add wave -position end  sim:/calcu_main_tb/lcd_db_tb
+add wave -position end  sim:/calcu_main_tb/reset_tb
+add wave -position end  sim:/calcu_main_tb/ps2d_tb
+add wave -position end  sim:/calcu_main_tb/ps2c_tb
+add wave -position end  sim:/calcu_main_tb/rx_en_tb
+add wave -position end  sim:/calcu_main_tb/rx_done_tick_tb
+add wave -position end  sim:/calcu_main_tb/outled_tb
+add wave -position end  sim:/calcu_main_tb/othersled_tb
+add wave -position end  sim:/calcu_main_tb/outdig_tb
+add wave -position end  sim:/calcu_main_tb/beep_tb
+add wave -position end  sim:/calcu_main_tb/step_tb
+add wave -position end  sim:/calcu_main_tb/cin_tb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+run
+run
+run
+run
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+quit -sim
+# End time: 08:15:44 on May 23,2021, Elapsed time: 0:03:23
+# Errors: 0, Warnings: 8
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd failed with 2 errors.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.calcu_main_tb
+# vsim -gui work.calcu_main_tb 
+# Start time: 08:18:28 on May 23,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calcu_main_tb(behavior_tb)
+# Loading work.clk_div_package
+# Loading work.keyboard_in_package
+# Loading work.alu_package
+# Loading work.calcu_main(behavior)
+# Loading work.lcd16x2_ctrl(rtl)
+# Loading work.clk_div(behavioral)
+# Loading work.keytoascii_package
+# Loading work.keyboard_in(arch)
+# Loading work.keytoascii(arch)
+# Loading work.adder4b_package
+# Loading work.subtractor4b_package
+# Loading work.multiplier4b_package
+# Loading work.comparator4b_package
+# Loading work.alu(main)
+# Loading work.fulladder_package
+# Loading work.adder4b(main)
+# Loading work.halfadder_package
+# Loading work.fulladder(main)
+# Loading work.halfadder(main)
+# Loading work.fullsubtractor_package
+# Loading work.subtractor4b(main)
+# Loading work.halfsubtractor_package
+# Loading work.fullsubtractor(main)
+# Loading work.halfsubtractor(main)
+# Loading work.multiplier4b(main)
+# Loading work.comparator4b(main)
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+add wave -position end  sim:/calcu_main_tb/clk_i_tb
+add wave -position end  sim:/calcu_main_tb/lcd_e_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rs_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rw_tb
+add wave -position end  sim:/calcu_main_tb/lcd_db_tb
+add wave -position end  sim:/calcu_main_tb/reset_tb
+add wave -position end  sim:/calcu_main_tb/ps2d_tb
+add wave -position end  sim:/calcu_main_tb/ps2c_tb
+add wave -position end  sim:/calcu_main_tb/rx_en_tb
+add wave -position end  sim:/calcu_main_tb/rx_done_tick_tb
+add wave -position end  sim:/calcu_main_tb/outled_tb
+add wave -position end  sim:/calcu_main_tb/othersled_tb
+add wave -position end  sim:/calcu_main_tb/outdig_tb
+add wave -position end  sim:/calcu_main_tb/beep_tb
+add wave -position end  sim:/calcu_main_tb/step_tb
+add wave -position end  sim:/calcu_main_tb/cin_tb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+quit -sim
+# End time: 08:31:14 on May 23,2021, Elapsed time: 0:12:46
+# Errors: 0, Warnings: 4
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.calcu_main_tb
+# vsim -gui work.calcu_main_tb 
+# Start time: 08:32:24 on May 23,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calcu_main_tb(behavior_tb)
+# Loading work.clk_div_package
+# Loading work.keyboard_in_package
+# Loading work.alu_package
+# Loading work.calcu_main(behavior)
+# Loading work.lcd16x2_ctrl(rtl)
+# Loading work.clk_div(behavioral)
+# Loading work.keytoascii_package
+# Loading work.keyboard_in(arch)
+# Loading work.keytoascii(arch)
+# Loading work.adder4b_package
+# Loading work.subtractor4b_package
+# Loading work.multiplier4b_package
+# Loading work.comparator4b_package
+# Loading work.alu(main)
+# Loading work.fulladder_package
+# Loading work.adder4b(main)
+# Loading work.halfadder_package
+# Loading work.fulladder(main)
+# Loading work.halfadder(main)
+# Loading work.fullsubtractor_package
+# Loading work.subtractor4b(main)
+# Loading work.halfsubtractor_package
+# Loading work.fullsubtractor(main)
+# Loading work.halfsubtractor(main)
+# Loading work.multiplier4b(main)
+# Loading work.comparator4b(main)
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+add wave -position end  sim:/calcu_main_tb/clk_i_tb
+add wave -position end  sim:/calcu_main_tb/lcd_e_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rs_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rw_tb
+add wave -position end  sim:/calcu_main_tb/lcd_db_tb
+add wave -position end  sim:/calcu_main_tb/reset_tb
+add wave -position end  sim:/calcu_main_tb/ps2d_tb
+add wave -position end  sim:/calcu_main_tb/ps2c_tb
+add wave -position end  sim:/calcu_main_tb/rx_en_tb
+add wave -position end  sim:/calcu_main_tb/rx_done_tick_tb
+add wave -position end  sim:/calcu_main_tb/outled_tb
+add wave -position end  sim:/calcu_main_tb/othersled_tb
+add wave -position end  sim:/calcu_main_tb/outdig_tb
+add wave -position end  sim:/calcu_main_tb/beep_tb
+add wave -position end  sim:/calcu_main_tb/step_tb
+add wave -position end  sim:/calcu_main_tb/cin_tb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+quit -sim
+# End time: 08:33:27 on May 23,2021, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 4
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.calcu_main_tb
+# vsim -gui work.calcu_main_tb 
+# Start time: 08:34:37 on May 23,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calcu_main_tb(behavior_tb)
+# Loading work.clk_div_package
+# Loading work.keyboard_in_package
+# Loading work.alu_package
+# Loading work.calcu_main(behavior)
+# Loading work.lcd16x2_ctrl(rtl)
+# Loading work.clk_div(behavioral)
+# Loading work.keytoascii_package
+# Loading work.keyboard_in(arch)
+# Loading work.keytoascii(arch)
+# Loading work.adder4b_package
+# Loading work.subtractor4b_package
+# Loading work.multiplier4b_package
+# Loading work.comparator4b_package
+# Loading work.alu(main)
+# Loading work.fulladder_package
+# Loading work.adder4b(main)
+# Loading work.halfadder_package
+# Loading work.fulladder(main)
+# Loading work.halfadder(main)
+# Loading work.fullsubtractor_package
+# Loading work.subtractor4b(main)
+# Loading work.halfsubtractor_package
+# Loading work.fullsubtractor(main)
+# Loading work.halfsubtractor(main)
+# Loading work.multiplier4b(main)
+# Loading work.comparator4b(main)
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+add wave -position end  sim:/calcu_main_tb/clk_i_tb
+add wave -position end  sim:/calcu_main_tb/lcd_e_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rs_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rw_tb
+add wave -position end  sim:/calcu_main_tb/lcd_db_tb
+add wave -position end  sim:/calcu_main_tb/reset_tb
+add wave -position end  sim:/calcu_main_tb/ps2d_tb
+add wave -position end  sim:/calcu_main_tb/ps2c_tb
+add wave -position end  sim:/calcu_main_tb/rx_en_tb
+add wave -position end  sim:/calcu_main_tb/rx_done_tick_tb
+add wave -position end  sim:/calcu_main_tb/outled_tb
+add wave -position end  sim:/calcu_main_tb/othersled_tb
+add wave -position end  sim:/calcu_main_tb/outdig_tb
+add wave -position end  sim:/calcu_main_tb/beep_tb
+add wave -position end  sim:/calcu_main_tb/step_tb
+add wave -position end  sim:/calcu_main_tb/cin_tb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+quit -sim
+# End time: 08:35:30 on May 23,2021, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 4
+# Compile of halfadder.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of adder4b.vhd was successful.
+# Compile of comparator4b.vhd was successful.
+# Compile of fullsubtractor.vhd was successful.
+# Compile of halfsubtractor.vhd was successful.
+# Compile of subtractor4b.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of keyboard_in.vhd was successful.
+# Compile of KeyToASCII.vhd was successful.
+# Compile of lcd16x2_ctrl.vhd was successful.
+# Compile of multiplier4b.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of calcu_main.vhd was successful.
+# Compile of calcu_main_tb.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.calcu_main_tb
+# vsim -gui work.calcu_main_tb 
+# Start time: 08:44:29 on May 23,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calcu_main_tb(behavior_tb)
+# Loading work.clk_div_package
+# Loading work.keyboard_in_package
+# Loading work.alu_package
+# Loading work.calcu_main(behavior)
+# Loading work.lcd16x2_ctrl(rtl)
+# Loading work.clk_div(behavioral)
+# Loading work.keytoascii_package
+# Loading work.keyboard_in(arch)
+# Loading work.keytoascii(arch)
+# Loading work.adder4b_package
+# Loading work.subtractor4b_package
+# Loading work.multiplier4b_package
+# Loading work.comparator4b_package
+# Loading work.alu(main)
+# Loading work.fulladder_package
+# Loading work.adder4b(main)
+# Loading work.halfadder_package
+# Loading work.fulladder(main)
+# Loading work.halfadder(main)
+# Loading work.fullsubtractor_package
+# Loading work.subtractor4b(main)
+# Loading work.halfsubtractor_package
+# Loading work.fullsubtractor(main)
+# Loading work.halfsubtractor(main)
+# Loading work.multiplier4b(main)
+# Loading work.comparator4b(main)
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/A4B/Sa8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solAdd(7 downto 5).
+# ** Warning: (vsim-8684) No drivers exist on out port /calcu_main_tb/SUT/ALU0/S4B/Ds8b(7 downto 5), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /calcu_main_tb/SUT/ALU0/solSub(7 downto 5).
+add wave -position end  sim:/calcu_main_tb/clk_i_tb
+add wave -position end  sim:/calcu_main_tb/lcd_e_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rs_tb
+add wave -position end  sim:/calcu_main_tb/lcd_rw_tb
+add wave -position end  sim:/calcu_main_tb/lcd_db_tb
+add wave -position end  sim:/calcu_main_tb/reset_tb
+add wave -position end  sim:/calcu_main_tb/ps2d_tb
+add wave -position end  sim:/calcu_main_tb/ps2c_tb
+add wave -position end  sim:/calcu_main_tb/rx_en_tb
+add wave -position end  sim:/calcu_main_tb/rx_done_tick_tb
+add wave -position end  sim:/calcu_main_tb/outled_tb
+add wave -position end  sim:/calcu_main_tb/othersled_tb
+add wave -position end  sim:/calcu_main_tb/outdig_tb
+add wave -position end  sim:/calcu_main_tb/beep_tb
+add wave -position end  sim:/calcu_main_tb/step_tb
+add wave -position end  sim:/calcu_main_tb/cin_tb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calcu_main_tb/SUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /calcu_main_tb/SUT
+quit -sim
+# End time: 09:07:42 on May 23,2021, Elapsed time: 0:23:13
+# Errors: 0, Warnings: 4

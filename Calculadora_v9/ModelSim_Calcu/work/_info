@@ -1,0 +1,884 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9_3/ModelSim_uart_tx
+Eadder4b
+Z0 w1618648126
+Z1 DPx4 work 17 fulladder_package 0 22 J@KDIZd7[oECa]ThR36`12
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ModelSim_Calcu
+Z5 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/adder4b.vhd
+Z6 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/adder4b.vhd
+l0
+L4
+VHhhkLWm]fOK]OQ;TC_GXQ2
+!s100 7BFEJE7h]B3=mzT=SQDnW3
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1621752257
+!i10b 1
+Z9 !s108 1621752257.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/adder4b.vhd|
+Z11 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/adder4b.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Amain
+R1
+R2
+R3
+DEx4 work 7 adder4b 0 22 HhhkLWm]fOK]OQ;TC_GXQ2
+l15
+L10
+V>j3QCL2;SP9MOU1Y^^EA?0
+!s100 8QNbI:YTBo^56<E<zn;QA2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Padder4b_package
+R2
+R3
+R0
+R4
+R5
+R6
+l0
+L26
+VEc0acSTi215mJ@=9UgF^g0
+!s100 GZ0mnVVR`Tc?eVLDD3Y1=1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu
+Z14 w1618669494
+Z15 DPx4 work 20 comparator4b_package 0 22 47Tl<b`fRGfg`85Wg83zI2
+Z16 DPx4 work 20 multiplier4b_package 0 22 j`jB`nJQ?YD5a1jUoCOK]0
+Z17 DPx4 work 20 subtractor4b_package 0 22 Od=CZU2khK4b;STT[JY1Q0
+Z18 DPx4 work 15 adder4b_package 0 22 Ec0acSTi215mJ@=9UgF^g0
+R2
+R3
+R4
+Z19 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/alu.vhd
+Z20 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/alu.vhd
+l0
+L7
+VzCUk<f=mj`@ElT5nT>eXz2
+!s100 9f9BD?^2FH1K8E9fbFPVd3
+R7
+32
+Z21 !s110 1621752258
+!i10b 1
+Z22 !s108 1621752258.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/alu.vhd|
+Z24 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/alu.vhd|
+!i113 1
+R12
+R13
+Amain
+R15
+R16
+R17
+R18
+R2
+R3
+DEx4 work 3 alu 0 22 zCUk<f=mj`@ElT5nT>eXz2
+l24
+L17
+Vbef=ikzOX>BFf6;iL^TGn0
+!s100 8:HaUM;?Wl[NzJ87hi2fJ1
+R7
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R12
+R13
+Palu_package
+R2
+R3
+R14
+R4
+R19
+R20
+l0
+L46
+VSSZ3cT?i`bj:^A^AB97hb0
+!s100 YkK][[:d^9NgKlY`_[JEV2
+R7
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R12
+R13
+Ecalcu_main
+Z25 w1620025522
+Z26 DPx4 work 11 alu_package 0 22 SSZ3cT?i`bj:^A^AB97hb0
+Z27 DPx4 work 19 keyboard_in_package 0 22 Y58fRni6TCzIk3oOR>b4i2
+Z28 DPx4 work 15 clk_div_package 0 22 X;Wc<01f6_hjTnh_OoclL3
+Z29 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R4
+Z30 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main.vhd
+Z31 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main.vhd
+l0
+L9
+VV4LG8gIN[gAGLUd3XdAja0
+!s100 >79:4cCnAa6KM3Giz>95j2
+R7
+32
+R21
+!i10b 1
+R22
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main.vhd|
+Z33 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main.vhd|
+!i113 1
+R12
+R13
+Abehavior
+Z34 DEx4 work 12 lcd16x2_ctrl 0 22 aYO=FAQ5R9kb?H3X^@oWz2
+R26
+R27
+R28
+R29
+R2
+R3
+DEx4 work 10 calcu_main 0 22 V4LG8gIN[gAGLUd3XdAja0
+l84
+L30
+VLQXAKk0bQO3R;ccbffW7V2
+!s100 ;E76RRDX_GnZFSmo7<jd73
+R7
+32
+R21
+!i10b 1
+R22
+R32
+R33
+!i113 1
+R12
+R13
+Ecalcu_main_tb
+Z35 w1621752254
+R29
+R2
+R3
+R4
+Z36 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main_tb.vhd
+Z37 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main_tb.vhd
+l0
+L6
+V@C5O?IMTJO_dBD1G0J;0O2
+!s100 Qn]>mEA<@TX`a:]knD1Bf3
+R7
+32
+R21
+!i10b 1
+R22
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main_tb.vhd|
+Z39 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/calcu_main_tb.vhd|
+!i113 1
+R12
+R13
+Abehavior_tb
+R29
+R2
+R3
+Z40 DEx4 work 13 calcu_main_tb 0 22 @C5O?IMTJO_dBD1G0J;0O2
+l46
+L10
+VZQ8nFgfC:GEJPO[JT939S2
+!s100 31II011T_>ZD]1go>7`OM3
+R7
+32
+R21
+!i10b 1
+R22
+R38
+R39
+!i113 1
+R12
+R13
+Eclk_div
+Z41 w1618418341
+R2
+R3
+R4
+Z42 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/clk_div.vhd
+Z43 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/clk_div.vhd
+l0
+L3
+V@3_Gd=kX:H<V162;LIn[n0
+!s100 o;oh`]Z;FmS0KGDG0C6N83
+R7
+32
+R8
+!i10b 1
+R9
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/clk_div.vhd|
+Z45 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/clk_div.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 7 clk_div 0 22 @3_Gd=kX:H<V162;LIn[n0
+l12
+L9
+VcBoYP3a9GT;YaaRVCGc7z0
+!s100 `k04U;[m7Li1K>f?dX=4C0
+R7
+32
+R8
+!i10b 1
+R9
+R44
+R45
+!i113 1
+R12
+R13
+Pclk_div_package
+R2
+R3
+R41
+R4
+R42
+R43
+l0
+L33
+VX;Wc<01f6_hjTnh_OoclL3
+!s100 6bHQn7_>mc8UibiomNaWK2
+R7
+32
+R8
+!i10b 1
+R9
+R44
+R45
+!i113 1
+R12
+R13
+Ecomparator4b
+Z46 w1618669521
+R2
+R3
+R4
+Z47 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/comparator4b.vhd
+Z48 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/comparator4b.vhd
+l0
+L3
+VZC=D^IQd;k0f[Jc<S]CX11
+!s100 8RA:PKBN545jURA7ZD^V91
+R7
+32
+R8
+!i10b 1
+R9
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/comparator4b.vhd|
+Z50 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/comparator4b.vhd|
+!i113 1
+R12
+R13
+Amain
+R2
+R3
+DEx4 work 12 comparator4b 0 22 ZC=D^IQd;k0f[Jc<S]CX11
+l9
+L8
+Ve[CJ9TIIAYk^Zj9RfzA`Y0
+!s100 _mfDghj10Ol0N`E`I3;nf0
+R7
+32
+R8
+!i10b 1
+R9
+R49
+R50
+!i113 1
+R12
+R13
+Pcomparator4b_package
+R2
+R3
+R46
+R4
+R47
+R48
+l0
+L17
+V47Tl<b`fRGfg`85Wg83zI2
+!s100 MSY`HDGTb`2z6HALR_AcF1
+R7
+32
+R8
+!i10b 1
+R9
+R49
+R50
+!i113 1
+R12
+R13
+Efulladder
+Z51 w1618426901
+Z52 DPx4 work 17 halfadder_package 0 22 WQYkZVj]chRQligKUaUH<2
+R2
+R3
+R4
+Z53 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fulladder.vhd
+Z54 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fulladder.vhd
+l0
+L4
+VXO<1F[P>08C5zJHGF[hOZ0
+!s100 oA3_]2>?``<4h=^Fl@J932
+R7
+32
+R8
+!i10b 1
+R9
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fulladder.vhd|
+Z56 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fulladder.vhd|
+!i113 1
+R12
+R13
+Amain
+R52
+R2
+R3
+DEx4 work 9 fulladder 0 22 XO<1F[P>08C5zJHGF[hOZ0
+l20
+L9
+VS5M7R3A0_TYT:32B42Ibg0
+!s100 `0]fV=SC78cU2;Q9I[^BU2
+R7
+32
+R8
+!i10b 1
+R9
+R55
+R56
+!i113 1
+R12
+R13
+Pfulladder_package
+R2
+R3
+R51
+R4
+R53
+R54
+l0
+L28
+VJ@KDIZd7[oECa]ThR36`12
+!s100 _:@@>:NO7Vkjkl;9]L8zh1
+R7
+32
+R8
+!i10b 1
+R9
+R55
+R56
+!i113 1
+R12
+R13
+Efullsubtractor
+Z57 w1616075789
+Z58 DPx4 work 22 halfsubtractor_package 0 22 :4Xo`5e2z;M`2PHJLKoa^1
+R2
+R3
+R4
+Z59 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fullsubtractor.vhd
+Z60 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fullsubtractor.vhd
+l0
+L4
+V6Ho_@<=<cMgc9ak=Gh>W20
+!s100 [zN[T;@JR;TMe;UJAjh^n0
+R7
+32
+R8
+!i10b 1
+R9
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fullsubtractor.vhd|
+Z62 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/fullsubtractor.vhd|
+!i113 1
+R12
+R13
+Amain
+R58
+R2
+R3
+DEx4 work 14 fullsubtractor 0 22 6Ho_@<=<cMgc9ak=Gh>W20
+l20
+L9
+Vd8Zl:VBVV=em;aX>Oe1oe2
+!s100 0jY]]c[cJN[@kH0zafBn>0
+R7
+32
+R8
+!i10b 1
+R9
+R61
+R62
+!i113 1
+R12
+R13
+Pfullsubtractor_package
+R2
+R3
+R57
+R4
+R59
+R60
+l0
+L27
+VjOUhSnRnYc?FOBH=HX:563
+!s100 hS_4HE^m2biS0=CUnNR^_0
+R7
+32
+R8
+!i10b 1
+R9
+R61
+R62
+!i113 1
+R12
+R13
+Ehalfadder
+Z63 w1615924887
+R2
+R3
+R4
+Z64 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfadder.vhd
+Z65 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfadder.vhd
+l0
+L3
+VI;=D:jiMi5oZ:ddZ?Sfd21
+!s100 8BEOLUVIJ;;<W@Y42^N911
+R7
+32
+R8
+!i10b 1
+R9
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfadder.vhd|
+Z67 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfadder.vhd|
+!i113 1
+R12
+R13
+Amain
+R2
+R3
+DEx4 work 9 halfadder 0 22 I;=D:jiMi5oZ:ddZ?Sfd21
+l9
+L8
+V1@Izzc5JEd;WKMEIOGl173
+!s100 f@A3[6YXmZ7hFJo[P4fPV3
+R7
+32
+R8
+!i10b 1
+R9
+R66
+R67
+!i113 1
+R12
+R13
+Phalfadder_package
+R2
+R3
+R63
+R4
+R64
+R65
+l0
+L15
+VWQYkZVj]chRQligKUaUH<2
+!s100 6MWe^Pma7c@4BDhCgSg2K3
+R7
+32
+R8
+!i10b 1
+R9
+R66
+R67
+!i113 1
+R12
+R13
+Ehalfsubtractor
+Z68 w1616074557
+R2
+R3
+R4
+Z69 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfsubtractor.vhd
+Z70 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfsubtractor.vhd
+l0
+L3
+VC1R[iRObm;UTC_amGN36K2
+!s100 0d?iFPhVCA^9SdS`ia^;K0
+R7
+32
+R8
+!i10b 1
+R9
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfsubtractor.vhd|
+Z72 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/halfsubtractor.vhd|
+!i113 1
+R12
+R13
+Amain
+R2
+R3
+DEx4 work 14 halfsubtractor 0 22 C1R[iRObm;UTC_amGN36K2
+l9
+L8
+VES54XGM3^czf@KB:A6;NJ1
+!s100 kHm0[7C8TzVWneaha1Yf61
+R7
+32
+R8
+!i10b 1
+R9
+R71
+R72
+!i113 1
+R12
+R13
+Phalfsubtractor_package
+R2
+R3
+R68
+R4
+R69
+R70
+l0
+L15
+V:4Xo`5e2z;M`2PHJLKoa^1
+!s100 1RF>cbP>G6cXXZ:e3bAO11
+R7
+32
+R8
+!i10b 1
+R9
+R71
+R72
+!i113 1
+R12
+R13
+Ekeyboard_in
+Z73 w1618412673
+Z74 DPx4 work 18 keytoascii_package 0 22 eaRk9gUT4AicR7PSa:LXR2
+R29
+R2
+R3
+R4
+Z75 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/keyboard_in.vhd
+Z76 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/keyboard_in.vhd
+l0
+L7
+VUdTzUmOnB`d4gTU>91cY91
+!s100 F2:DH6?2Q;M`E]MZ<UKgC2
+R7
+32
+R8
+!i10b 1
+R9
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/keyboard_in.vhd|
+Z78 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/keyboard_in.vhd|
+!i113 1
+R12
+R13
+Aarch
+R74
+R29
+R2
+R3
+DEx4 work 11 keyboard_in 0 22 UdTzUmOnB`d4gTU>91cY91
+l26
+L17
+VnzUMnGm6AJEg]aTSPjeH42
+!s100 ?ffB5`=L>H2^>Y2MFlG442
+R7
+32
+R8
+!i10b 1
+R9
+R77
+R78
+!i113 1
+R12
+R13
+Pkeyboard_in_package
+R2
+R3
+R73
+R4
+R75
+R76
+l0
+L100
+VY58fRni6TCzIk3oOR>b4i2
+!s100 UMh?MQ9DH2i=VH;IWg[H`0
+R7
+32
+R8
+!i10b 1
+R9
+R77
+R78
+!i113 1
+R12
+R13
+Ekeytoascii
+Z79 w1618727209
+R29
+R2
+R3
+R4
+Z80 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/KeyToASCII.vhd
+Z81 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/KeyToASCII.vhd
+l0
+L5
+VMK9T[oEW1J]aXHzoMGWNJ2
+!s100 jUPa3Y]W9z43?:>ik=izl1
+R7
+33
+R8
+!i10b 1
+R9
+Z82 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/KeyToASCII.vhd|
+Z83 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/KeyToASCII.vhd|
+!i113 1
+Z84 o-work work -2008 -explicit
+R13
+Aarch
+R29
+R2
+R3
+DEx4 work 10 keytoascii 0 22 MK9T[oEW1J]aXHzoMGWNJ2
+l11
+L10
+VJ[mC251hWbNTal`VYDA>Z2
+!s100 =B=7?Uno;e[iHfo3g=IZ=0
+R7
+33
+R8
+!i10b 1
+R9
+R82
+R83
+!i113 1
+R84
+R13
+Pkeytoascii_package
+R2
+R3
+R79
+R4
+R80
+R81
+l0
+L39
+VeaRk9gUT4AicR7PSa:LXR2
+!s100 R`LGC^8M?UG97;RC:K0jR2
+R7
+33
+R8
+!i10b 1
+R9
+R82
+R83
+!i113 1
+R84
+R13
+Elcd16x2_ctrl
+Z85 w1354136569
+R2
+R3
+R4
+Z86 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/lcd16x2_ctrl.vhd
+Z87 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/lcd16x2_ctrl.vhd
+l0
+L27
+VaYO=FAQ5R9kb?H3X^@oWz2
+!s100 ;8kN;e3Ei[cP=Rj8WZjMW1
+R7
+32
+R8
+!i10b 1
+R9
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/lcd16x2_ctrl.vhd|
+Z89 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/lcd16x2_ctrl.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R34
+l114
+L44
+VC_jTf1@R:KoYWN5Zl<BHN1
+!s100 ;FQoW:;OJSVn2e<;ZEF3X2
+R7
+32
+R8
+!i10b 1
+R9
+R88
+R89
+!i113 1
+R12
+R13
+Emultiplier4b
+Z90 w1618668221
+R1
+R52
+R2
+R3
+R4
+Z91 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/multiplier4b.vhd
+Z92 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/multiplier4b.vhd
+l0
+L5
+VdZb1OEIfMFX?_Hm0TnJ0]0
+!s100 N^0L2`PKDS?b0iZ>[dFj90
+R7
+33
+R21
+!i10b 1
+R22
+Z93 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/multiplier4b.vhd|
+Z94 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/multiplier4b.vhd|
+!i113 1
+R84
+R13
+Amain
+R1
+R52
+R2
+R3
+DEx4 work 12 multiplier4b 0 22 dZb1OEIfMFX?_Hm0TnJ0]0
+l38
+L10
+VeQ9Jj@:0NhQ9l[58=oh0>3
+!s100 lLjbUM?dno75eKHBgkg1N2
+R7
+33
+R21
+!i10b 1
+R22
+R93
+R94
+!i113 1
+R84
+R13
+Pmultiplier4b_package
+R2
+R3
+R90
+R4
+R91
+R92
+l0
+L60
+Vj`jB`nJQ?YD5a1jUoCOK]0
+!s100 M9[^YhMhOZO6kcDkC25=T3
+R7
+33
+R21
+!i10b 1
+R22
+R93
+R94
+!i113 1
+R84
+R13
+Esubtractor4b
+Z95 w1618653005
+Z96 DPx4 work 22 fullsubtractor_package 0 22 jOUhSnRnYc?FOBH=HX:563
+R2
+R3
+R4
+Z97 8D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/subtractor4b.vhd
+Z98 FD:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/subtractor4b.vhd
+l0
+L4
+V[lJnha6I5V49H7F]T:4kF3
+!s100 i]oB;d8eH<_^7DJIaGhNV3
+R7
+32
+R8
+!i10b 1
+R9
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/subtractor4b.vhd|
+Z100 !s107 D:/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_v9/ALU/subtractor4b.vhd|
+!i113 1
+R12
+R13
+Amain
+R96
+R2
+R3
+DEx4 work 12 subtractor4b 0 22 [lJnha6I5V49H7F]T:4kF3
+l19
+L10
+VOP]n?deT?6RJOzdnOlRP=0
+!s100 :ZVXRnW;E=H08jd[HIi1b3
+R7
+32
+R8
+!i10b 1
+R9
+R99
+R100
+!i113 1
+R12
+R13
+Psubtractor4b_package
+R2
+R3
+R95
+R4
+R97
+R98
+l0
+L29
+VOd=CZU2khK4b;STT[JY1Q0
+!s100 OYmn;bf9aT0e>;M<5eo=X0
+R7
+32
+R8
+!i10b 1
+R9
+R99
+R100
+!i113 1
+R12
+R13
